@@ -4,76 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PSTG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div>
-            <h1>PSTG</h1>
-            <h2>PROJETOS</h2>
-            <h2>DESENVOLVIMENTO</h2>
-            <h2>ATIVIDADES PSTG</h2>
-            <h2>CONTATOS</h2>
-        </div>
+            <nav>
+                <ul>
+                    <li><h1>PSTG</h1></li>
+                    <li>|</li>
+                    <li><a href="">PROJETOS</a></li>
+                    <li><a href="">DESENVOLVIMENTO</a></li>
+                    <li><a href="">ATIVIDADES PSTG</a></li>
+                    <li><a href="">CONTATOS</a></li>
+                </ul>
+            </nav>
     </header>
 
     <main>
-        <div> <!-- Adicionar imagem de fundo -->
-            <h3>QUEM SOMOS</h3>
+        <section class="hero"> <!-- Adicionar imagem de fundo -->
+            <h1>QUEM SOMOS</h1>
             <p>Desde 2020 atuando nas áreas de energia e tecnologia.</p>
             <ul>
                 <li>Engenharia Elétrica - Através de estudos detalhados de redes e linhas de transmissão</li>
                 <li>Ciência da Computação - Através do desenvolvimento de software e utilização de inteligência artificial para solução de problemas</li>
             </ul>
-        </div>
+        </section>
 
-        <div>
-            <h3>PROJETOS</h3>
+        <section class="testimonials">
+            <h2>PROJETOS</h2>
             <p>Aqui podemos acompanhar nosso progresso e sucesso, através dos projetos em andamento e concluídos.</p>
-            <h4>EM ANDAMENTO</h4>
-            <ul>
-                <li>Projeto 1</li>
-                <li>Projeto 2</li>
-                <li>Projeto 3</li>
-            </ul>
-            <h4>CONCLUÍDOS</h4>
-            <ol>
-                <li>Projeto 4</li>
-                <li>Projeto 5</li>
-                <li>Projeto 6</li>
-            </ol>
-        </div>
+            <div class="testimonials">
+                <h4>EM ANDAMENTO</h4>
+                <ul>
+                    <li>Projeto 1</li>
+                    <li>Projeto 2</li>
+                    <li>Projeto 3</li>
+                </ul>
+            </div>
+            <div class="testimonials">
+                <h4>CONCLUÍDOS</h4>
+                <ul>
+                    <li>Projeto 4</li>
+                    <li>Projeto 5</li>
+                    <li>Projeto 6</li>
+                </ul>
+            </div>
+        </section>
 
-        <div>
-            <h3>DESENVOLVIMENTO</h3>
+        <section>
+            <h2>DESENVOLVIMENTO</h2>
             <p>???</p>
-        </div>
+        </section>
 
-        <div>
-            <h3>ATIVIDADES PSTG</h3>
-            <h4>CURSOS</h4>
-            <p>Para desfrutar do conhecimento que nossos profissionais com mais de 25 anos de atuação na área disponibilizaram em nossa plataforma de ensino digital CLIQUE AQUI.</p>
-            <p>Os cursos oferecem certificados e oportunidades de estágio, com desenvolvimento pessoal e crescimento profissional dentro da empresa para aqueles que os concluírem.</p>
-            <h4>SERVIÇOS</h4>
-            <p>Para desenvolver um projeto ou contratar algum de nossos serviços CLIQUE AQUI.</p>
-            <ul>
-                <li>Estudos de linhas de transmissão</li>
-                <li>Utilização de nossas ferramentas</li>
-                <li>Consultoria nas áreas de tecnologia e energia</li>
-                <li>Desenvolvimento de software na área elétrica ou outras áreas</li>
-            </ul>
-        </div>
+        <section class="courses">
+            <h2>ATIVIDADES PSTG</h2>
+            <div class="course-card">
+                <h3>CURSOS</h3>
+                <p>Para desfrutar do conhecimento que nossos profissionais com mais de 25 anos de atuação na área disponibilizaram em nossa plataforma de ensino digital CLIQUE AQUI.</p>
+                <p>Os cursos oferecem certificados e oportunidades de estágio, com desenvolvimento pessoal e crescimento profissional dentro da empresa para aqueles que os concluírem.</p>
+            </div>
+            <div class="course-card">
+                <h3>SERVIÇOS</h3>
+                <p>Para desenvolver um projeto ou contratar algum de nossos serviços CLIQUE AQUI.</p>
+                <ul>
+                    <li>Estudos de linhas de transmissão</li>
+                    <li>Utilização de nossas ferramentas</li>
+                    <li>Consultoria nas áreas de tecnologia e energia</li>
+                    <li>Desenvolvimento de software na área elétrica ou outras áreas</li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div>
-            <h3>CONTATOS</h3> <!-- Adicionar icons -->
-            <a href="" id="whatsapp">+55 21 99999-9999</a>
-            <a href="" id="email">pstg@pstg.com</a>
-            <a href="" id="facebook">@pstgoficial</a>
-            <a href="" id="linkedin">@pstginternational</a>
-            <a href="" id="instagram">@pstgpstg</a>
-            <p>Todos os direitos reservados a @PSTG.</p>
-        </div>
+        <section class="footer-content">
+            <div class="info">
+                <h4>PSTG</h4>
+                <p>Razão Social: PSTG Cursos LTDA</p>
+                <p>CNPJ: 12.345.678/0001-00</p>
+                <p>Endereço: Rua Gil Sobral Pinto - 93</p>
+                <p>Iucas - Teresópolis - RJ</p>
+                <p>CEP: 12345-000</p>
+            </div>
+            <div class="logo">
+                <img src="imagem/pstg_logo280.png" alt="PSTG logo">
+            </div>
+            <div>
+                <div class="title">
+                    <h4>CONTATOS</h4>
+                </div>
+                <div class="links">
+                    <p><i class="fa-brands fa-whatsapp"></i> <a href="" id="whatsapp">+55 21 99999-9999</a></p>
+                    <p><i class="fa-regular fa-envelope"></i> <a href="" id="email">pstg@pstg.com</a></p>
+                    <p><i class="fa-brands fa-instagram"></i> <a href="" id="instagram">@pstgpstg</a></p>
+                    <p><i class="fa-brands fa-facebook"></i> <a href="" id="facebook">@pstgoficial</a></p>
+                    <p><i class="fa-brands fa-youtube"></i> <a href="" id="youtube">@pstgcursos</a></p>
+                    <p><i class="fa-brands fa-linkedin-in"></i> <a href="" id="linkedin">@pstginternational</a></p>
+                </div>
+            </div>
+        </section>
+        
+        <p>&copy; 2024 Copyright PSTG todos os direitos reservados</p>
     </footer>
+
+    <!-- Script for social media icons -->
+    <script src="https://kit.fontawesome.com/4ab08ea2b2.js" crossorigin="anonymous"></script>
 </body>
 </html>

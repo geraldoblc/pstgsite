@@ -1,2 +1,184 @@
 @charset "UTF-8";
 
+:root {
+    --cor0: #e25822;
+    --cor1: #BA5C12;
+    --cor2: #515931;
+    --cor3: #899C4E;
+    --cor4: #0D0D0D;
+    --cor5: #1F2421;
+    --cor6: #F9F9F9;
+    --cor7: #F5F5F5;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-h2: Cambria, Cochin, Georgia, Times;
+    --fonte-destaque: 'Bebas Neue', sans-serif, cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--cor7);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a, .login a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    background-color: var(--cor5);
+    min-width: 320px;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--cor6);
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    color: var(--cor0);
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: var(--cor0);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.features, .courses, .professors, .testimonials {
+    padding: 50px 20px;
+}
+
+.features ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.features ul li {
+    margin-bottom: 10px;
+}
+
+.course-card {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    vertical-align: top;
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+}
+
+.course-card h3 {
+    color: var(--cor0);
+    margin: 10px 0;
+}
+
+.course-card button {
+    padding: 10px 20px;
+    background-color: var(--cor0);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.professors .universities img {
+    width: 20%;
+    margin: 10px;
+}
+
+.testimonials .testimonial {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.testimonials .testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--cor7);
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content div {
+    flex: 1 1 30%; /* Each div will take up approximately 45% of the width */
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.info {
+    align-self: center;
+    
+}
+
+.logo {
+    
+}
+
+.title {
+    font-size: 1.5em;
+    
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.links p {
+    margin: 7px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #333;
+    margin: 5px 0;
+}
+
+.links i {
+    margin-right: 5px;
+}
