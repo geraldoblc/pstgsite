@@ -11,14 +11,21 @@
     <header>
             <nav>
                 <ul>
-                    <li><h1>PSTG</h1></li>
+                    <li class="special">PSTG</li>
                     <li>|</li>
                     <li><a href="">PROJETOS</a></li>
                     <li><a href="">DESENVOLVIMENTO</a></li>
-                    <li><a href="">ATIVIDADES PSTG</a></li>
+                    <li><a href="">ATIVIDADES</a></li>
                     <li><a href="">CONTATOS</a></li>
                 </ul>
             </nav>
+            <div class="language-selector">
+                <select onchange="changeLanguage(this.value)">
+                    <option value="pt-br">Português</option>
+                    <option value="en">Inglês</option>
+                    <option value="es">Espanhol</option>
+                </select>
+            </div>
     </header>
 
     <main>
@@ -29,12 +36,13 @@
                 <li>Engenharia Elétrica - Através de estudos detalhados de redes e linhas de transmissão</li>
                 <li>Ciência da Computação - Através do desenvolvimento de software e utilização de inteligência artificial para solução de problemas</li>
             </ul>
+            <img src="imagem/man1.jpg" alt="worker">
         </section>
 
-        <section class="testimonials">
+        <section class="projects">
             <h2>PROJETOS</h2>
             <p>Aqui podemos acompanhar nosso progresso e sucesso, através dos projetos em andamento e concluídos.</p>
-            <div class="testimonials">
+            <div class="moment">
                 <h4>EM ANDAMENTO</h4>
                 <ul>
                     <li>Projeto 1</li>
@@ -42,7 +50,7 @@
                     <li>Projeto 3</li>
                 </ul>
             </div>
-            <div class="testimonials">
+            <div class="moment">
                 <h4>CONCLUÍDOS</h4>
                 <ul>
                     <li>Projeto 4</li>
@@ -58,7 +66,7 @@
         </section>
 
         <section class="courses">
-            <h2>ATIVIDADES PSTG</h2>
+            <h2>ATIVIDADES</h2>
             <div class="course-card">
                 <h3>CURSOS</h3>
                 <p>Para desfrutar do conhecimento que nossos profissionais com mais de 25 anos de atuação na área disponibilizaram em nossa plataforma de ensino digital CLIQUE AQUI.</p>
@@ -104,11 +112,31 @@
                 </div>
             </div>
         </section>
-        
+        <hr>
         <p>&copy; 2024 Copyright PSTG todos os direitos reservados</p>
     </footer>
 
     <!-- Script for social media icons -->
     <script src="https://kit.fontawesome.com/4ab08ea2b2.js" crossorigin="anonymous"></script>
+    
+    <!-- Script for language change 
+    <script>
+        // Função para mudar o idioma
+        function changeLanguage(lang) {
+            var url;
+            switch (lang) {
+                case "en":
+                    url = "https://seusite.com/en"; // URL para a versão em inglês do seu site
+                    break;
+                case "es":
+                    url = "https://seusite.com/es"; // URL para a versão em espanhol do seu site
+                    break;
+                default:
+                    url = "https://seusite.com/"; // URL para a versão em português do seu site
+            }
+            window.location.href = url;
+        }
+    </script>
+    -->
 </body>
 </html>

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+---------------------------
+Celular: de 320px até 600px
+Tablet: 601px até 768px
+Desktop: 769px até 1200px
+TV: acima de 1200px
+*/
+
+@media screen and (min-width: 769px) {
+    main {
+        min-width: 720px;
+        max-width: 980px;
+    }
+    .div1, .div2, .div3, .div4, .div5, .div6 {
+        flex: 1;
+    }
+}
