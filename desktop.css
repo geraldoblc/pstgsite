@@ -11,9 +11,9 @@ TV: acima de 1200px
 @media screen and (min-width: 769px) {
     main {
         min-width: 720px;
-        max-width: 980px;
+        max-width: 1170px;
     }
-    .div1, .div2, .div3, .div4, .div5, .div6 {
+    .course, .service {
         flex: 1;
     }
 }
