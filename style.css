@@ -40,7 +40,6 @@ header {
     padding-bottom: 25px;
     background-color: var(--cor7);
     font-family: var(--fonte-destaque);
-    font-size: 1em;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 2px;
 }
@@ -57,13 +56,13 @@ nav {
 
 .special {
     font-weight: bold; /* Definindo o texto em negrito */
-    font-size: 1.5em; /* Aumentando o tamanho da fonte */
+    font-size: 1.35em; /* Aumentando o tamanho da fonte */
     color: var(--cor0);
     margin-right: 5px;
 }
 
 .division {
-    font-size: 1.5em; /* Aumentando o tamanho da fonte */
+    font-size: 1.35em; /* Aumentando o tamanho da fonte */
 }
 
 nav a {
@@ -80,7 +79,7 @@ nav a:hover {
 }
 
 main {
-    background-color: whitesmoke;
+    background-color: var(--cor7);
     min-width: 320px;
     max-width: 530px;
     margin: auto;
@@ -118,6 +117,22 @@ main a:hover {
     color: var(--cor3);
 }
 
+.initial {
+    background-image: url('imagem/worker.jpg');
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; /* Evita repetir a imagem */
+    border-radius: 10px;
+    text-align: left;
+}
+
+.initial p {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 5px 15px;
+    list-style-type: none;
+    margin: 0;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap; 
@@ -137,15 +152,19 @@ div img {
     width: 100%;
 }
 
+section {
+    text-align: center;
+    padding: 25px;
+}
+
 h1 {
-    font-family: var(--fonte-h2);
+    font-family: var(--fonte-title);
     color: var(--cor0);
     font-weight: normal;
-    font-size: 2em;
+    font-size: 1.35em;
     text-align: center;
-    background-color: var(--cor2);
+    background-color: var(--cor7);
     margin-bottom: 15px;
-    border-radius: 10px 10px 0px 0px;
 }
 
 h2 {
@@ -154,7 +173,6 @@ h2 {
     color: var(--cor0);
     text-indent: 20px;
     font-weight: normal;
-    font-size: 1.5em;
     margin: 30px 0px 10px 0px;
 }
 
@@ -162,7 +180,7 @@ h3 {
     font-family: var(--fonte-destaque);
     font-weight: 400;
     font-style: normal;
-    font-size: 1.8em;
+    font-size: 1.2em;
     text-align: center;
     font-weight: normal;
     color: var(--cor4);
@@ -181,7 +199,7 @@ h4 {
     background-color: var(--cor3);
     font-family: var(--fonte-h2);
     color: whitesmoke;
-    font-size: 1.2em;
+    font-size: 0.8em;
     padding: 10px;
 }
 
@@ -190,53 +208,6 @@ h4 {
 
 
 
-
-
-
-
-
-.features, .courses, .professors, .projects {
-    padding: 50px 20px;
-}
-
-.features ul {
-    list-style: none;
-    padding-left: 20px;
-}
-
-.features ul li {
-    margin-bottom: 10px;
-}
-
-.course-card {
-    display: inline-block;
-    width: 30%;
-    margin: 1%;
-    vertical-align: top;
-}
-
-.course-card img {
-    width: 100%;
-    height: auto;
-}
-
-.course-card h3 {
-    color: var(--cor0);
-    margin: 10px 0;
-}
-
-.course-card button {
-    padding: 10px 20px;
-    background-color: var(--cor0);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.professors .universities img {
-    width: 20%;
-    margin: 10px;
-}
 
 .projects .moment {
     display: inline-block;
@@ -281,7 +252,7 @@ footer {
 
 .info {
     align-self: center;
-    text-align: left;
+    
 }
 
 .logo {
