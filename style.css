@@ -68,14 +68,15 @@ nav {
 nav a {
     color: var(--cor5);
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 20px;
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #e2582254;
+    transform: translate(-1px, -1px);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     color: black;
-    transition-duration: .5s;
+    transition-duration: .25s;
 }
 
 main {
@@ -92,12 +93,12 @@ main p {
     text-align: justify;
     text-indent: 30px;
     line-height: 1.5em;
-    padding: 15px;
+    padding: 10px;
 }
 
 main strong {
-    color: var(--cor0);
     font-weight: bold;
+    font-style: italic;
 }
 
 main a {
@@ -117,6 +118,12 @@ main a:hover {
     color: var(--cor3);
 }
 
+section {
+    text-align: center;
+    padding: 25px;
+    margin: 25px 0;
+}
+
 .initial {
     background-image: url('imagem/worker.jpg');
     background-size: cover; /* Faz com que a imagem cubra toda a área */
@@ -133,14 +140,57 @@ main a:hover {
     margin: 0;
 }
 
+main ul li {
+    margin: 0 0 0 35px;
+    padding: 5px;
+    text-align: left;
+    list-style-type: none;    
+}
+
+.projects ul li {
+    margin: 10px 0px;
+    text-align: left;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    list-style-type: none;    
+}
+
+.projects .present, .projects .past {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(200, 200, 200, 0.4);
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none; 
+}
+
+.more {
+    color: var(--cor5);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.more:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.25s;
+    border-radius: 5px;
+    color: black;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap; 
 }
 
 .course, .service {
-    width: 100%;
-    margin: 20px;
+    margin: 15px;
     background-color: rgba(200, 200, 200, 0.4);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -152,25 +202,22 @@ div img {
     width: 100%;
 }
 
-section {
-    text-align: center;
-    padding: 25px;
-}
+
 
 h1 {
     font-family: var(--fonte-title);
     color: var(--cor0);
-    font-weight: normal;
-    font-size: 1.35em;
+    font-weight: bold;
+    font-size: 2em;
     text-align: center;
     background-color: var(--cor7);
     margin-bottom: 15px;
 }
 
 h2 {
-    background-image: linear-gradient(90deg, #1e3888, whitesmoke);
-    font-family: var(--fonte-h2);
-    color: var(--cor0);
+    background-color: var(--cor0);
+    font-family: var(--fonte-title);
+    color: var(--cor7);
     text-indent: 20px;
     font-weight: normal;
     margin: 30px 0px 10px 0px;
@@ -178,44 +225,30 @@ h2 {
 
 h3 {
     font-family: var(--fonte-destaque);
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 1.8em;
     text-align: center;
     font-weight: normal;
-    color: var(--cor4);
+    color: var(--cor0);
     margin: 20px 15px 10px 15px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.308);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 h3:hover {
     transform: translate(-1px, -1px);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.25s;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
-h4 {
-    background-color: var(--cor3);
-    font-family: var(--fonte-h2);
-    color: whitesmoke;
-    font-size: 0.8em;
-    padding: 10px;
+h4 {   
+    font-family: var(--fonte-destaque);
+    color: var(--cor3);
+    font-size: 1.2em;
 }
 
 
-
-
-
-
-
-.projects .moment {
-    display: inline-block;
-    width: 30%;
-    margin: 1%;
-    vertical-align: top;
-    text-align: center;
-}
 
 .hero img {
     width: 100px;
@@ -224,15 +257,9 @@ h4 {
     margin-bottom: 10px;
 }
 
-.projects .moment img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
 
 footer {
-    padding: 20px;
+    padding: 1px;
     background-color: var(--cor7);
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -240,6 +267,7 @@ footer {
 
 .footer-content {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -247,11 +275,11 @@ footer {
 .footer-content div {
     flex: 1 1 30%; /* Each div will take up approximately 45% of the width */
     margin: 0;
-    padding: 10px;
+    padding: 1px;
 }
 
 .info {
-    align-self: center;
+    
     
 }
 
@@ -274,8 +302,8 @@ footer {
 
 .links a {
     text-decoration: none;
-    color: #333;
-    margin: 5px 0;
+    color: black;
+    margin: 5px;
 }
 
 .links i {

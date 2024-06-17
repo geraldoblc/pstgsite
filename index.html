@@ -30,38 +30,83 @@
     <main>
         <section class="initial"> <!-- Adicionar imagem de fundo -->
             <h1>QUEM SOMOS</h1>
-            <p>Desde 2020 atuando com excelência nas áreas de energia e tecnologia. Contamos com uma equipe altamente treinada e profissional.</p>
+            <p>Desde 2024 atuando com excelência nas áreas de energia e tecnologia. Contamos com uma equipe altamente treinada e profissional.</p>
             <p>Engenharia Elétrica - Através de estudos detalhados de redes e linhas de transmissão.</p>
             <p>Ciência da Computação - Através do desenvolvimento de software e utilização de inteligência artificial para solução de problemas, especialmente na área elétrica.</p>
         </section>
 
         <section class="projects">
-            <h2>PROJETOS</h2>
-            <p>Aqui podemos acompanhar nosso progresso e sucesso, através dos projetos em andamento e concluídos.</p>
-            <div class="moment">
-                <h4>EM ANDAMENTO</h4>
+            <h1>PROJETOS</h1>
+            <p>Podemos acompanhar nosso progresso e sucesso, através dos projetos em andamento e concluídos.</p>
+            <div class="past">
+                <h2>CONCLUÍDOS</h2>
                 <ul>
-                    <li>Projeto 1</li>
-                    <li>Projeto 2</li>
-                    <li>Projeto 3</li>
+                    <li>
+                        Projeto 001: Estudo das linhas de transmissão entre Terminal Janaúba e Juscelino.
+                        <span onclick="showMore(this)" class="more">Detalhes...</span>
+                        <span class="hidden">
+                            <p>Início: 14/01/2024, Conclusão: 01/03/2024.</p>
+                            <p>Serviço prestado para <strong>FURNAS</strong> - Estudos de tensões em trechos de linhas e reatores neutros, além da energia dissipada nos para-raios.</p>
+                            <p>Nota do cliente: "Obtivemos o estudo completo e preciso, abaixo do tempo estimado. Com custo dentro do valor de mercado."</p>
+                        </span>
+                    </li>
+                    <li>
+                        Projeto ATP: Desenvolvimento de software para extração de piores casos de tensão e energia em trechos de linhas.
+                        <span onclick="showMore(this)" class="more">Detalhes...</span>
+                        <span class="hidden">
+                            <p>Início: 22/04/2024, Conclusão: 28/06/2024.</p>
+                            <p>Serviço prestado para <strong>GERAÇÃO 7</strong> - Software capaz de extrair dados, filtrando-os e plotando-os em gráficos, fornecendo relatórios e tabelas detalhadas dos estudos realizados.</p>
+                            <p>Nota do cliente: "A qualidade do software desenvolvido surpreendeu nossa equipe técnica, por sua usabilidade e por mostrar-se altamente intuitivo."</p>
+                        </span>
+                    </li>
+                    <li>
+                        Projeto xxx: ...
+                        <span onclick="showMore(this)" class="more">Detalhes...</span>
+                        <span class="hidden">
+                            <p>Início: xx/xx/202x, Conclusão: xx/xx/202x.</p>
+                            <p>Serviço prestado para <strong>XXX</strong> - ...</p>
+                            <p>Nota do cliente: "..."</p>
+                        </span>
+                    </li>
                 </ul>
             </div>
-            <div class="moment">
-                <h4>CONCLUÍDOS</h4>
+            <div class="present">
+                <h2>EM ANDAMENTO</h2>
                 <ul>
-                    <li>Projeto 4</li>
-                    <li>Projeto 5</li>
-                    <li>Projeto 6</li>
+                    <li>
+                        Projeto AMANI: Estudos meteorológicos para prevenção de catástrofes climáticas.
+                        <span onclick="showMore(this)" class="more">Detalhes...</span>
+                        <span class="hidden">
+                            <p>Início: 01/07/2023, Previsão de conclusão: 01/07/2027.</p>
+                            <p>Serviço prestado para <strong>REPÚBLICA DEMOCRÁTICA DO CONGO</strong> - Estudo climático, através de dados históricos cruzados com dados meteorológicos recentes. Com auxílio de IA, para maior precisão e eficiência no tratamento destes dados.</p>
+                        </span>
+                    </li>
+                    <li>
+                        Projeto xxx: ...
+                        <span onclick="showMore(this)" class="more">Detalhes...</span>
+                        <span class="hidden">
+                            <p>Início: xx/xx/202x, Conclusão: xx/xx/202x.</p>
+                            <p>Serviço prestado para <strong>XXX</strong> - ...</p>
+                        </span>
+                    </li>
+                    <li>
+                        Projeto xxx: ...
+                        <span onclick="showMore(this)" class="more">Detalhes...</span>
+                        <span class="hidden">
+                            <p>Início: xx/xx/202x, Conclusão: xx/xx/202x.</p>
+                            <p>Serviço prestado para <strong>XXX</strong> - ...</p>
+                        </span>
+                    </li>
                 </ul>
             </div>
         </section>
 
         <section>
-            <h2>DESENVOLVIMENTO</h2>
+            <h1>DESENVOLVIMENTO</h1>
             <p>???</p>
         </section>
 
-        <h2>ATIVIDADES</h2>
+        <h1>ATIVIDADES</h1>
         <section class="container">
             <div class="course">
                 <img src="imagem/program.jpg" alt="course">
@@ -89,13 +134,17 @@
 
     <footer>
         <section class="footer-content">
-            <div class="info">
-                <h4>PSTG</h4>
-                <p>Razão Social: PSTG Cursos LTDA</p>
-                <p>CNPJ: 12.345.678/0001-00</p>
-                <p>Endereço: Rua Gil Sobral Pinto - 93</p>
-                <p>Iucas - Teresópolis - RJ</p>
-                <p>CEP: 12345-000</p>
+            <div>
+                <div class="title">
+                    <h4>PSTG</h4>
+                </div>
+                <div class="info">
+                    <p>Razão Social: PSTG Cursos LTDA</p>
+                    <p>CNPJ: 12.345.678/0001-00</p>
+                    <p>Endereço: Rua Gil Sobral Pinto - 93</p>
+                    <p>Iucas - Teresópolis - RJ</p>
+                    <p>CEP: 12345-000</p>
+                </div>
             </div>
             <div class="logo">
                 <img src="imagem/pstg_logo280.png" alt="PSTG logo">
@@ -105,12 +154,18 @@
                     <h4>CONTATOS</h4>
                 </div>
                 <div class="links">
-                    <p><i class="fa-brands fa-whatsapp"></i> <a href="" id="whatsapp">+55 21 99999-9999</a></p>
-                    <p><i class="fa-regular fa-envelope"></i> <a href="" id="email">pstg@pstg.com</a></p>
-                    <p><i class="fa-brands fa-instagram"></i> <a href="" id="instagram">@pstgpstg</a></p>
-                    <p><i class="fa-brands fa-facebook"></i> <a href="" id="facebook">@pstgoficial</a></p>
-                    <p><i class="fa-brands fa-youtube"></i> <a href="" id="youtube">@pstgcursos</a></p>
-                    <p><i class="fa-brands fa-linkedin-in"></i> <a href="" id="linkedin">@pstginternational</a></p>
+                    <p><i class="fa-brands fa-whatsapp" style="color: #899c4e;"></i> +55 21 99999-9999</p>
+                    <p><i class="fa-regular fa-envelope" style="color: #899c4e;"></i> pstg@pstg.com</p>
+                    <p>@pstgoficial</p>
+                    <p>
+                        <a href="" id="instagram"><i class="fa-brands fa-instagram" style="color: #899c4e;"></i></a>
+                        <a href="" id="facebook"><i class="fa-brands fa-facebook" style="color: #899c4e;"></i></a>
+                        <a href="" id="youtube"><i class="fa-brands fa-youtube" style="color: #899c4e;"></i></a>
+                        <a href="" id="linkedin"><i class="fa-brands fa-linkedin-in" style="color: #899c4e;"></i></a>
+                    </p>
+                    
+                    
+                    
                 </div>
             </div>
         </section>
@@ -120,6 +175,22 @@
 
     <!-- Script for social media icons -->
     <script src="https://kit.fontawesome.com/4ab08ea2b2.js" crossorigin="anonymous"></script>
+
+    <script>
+        function showMore(clickedElement) {
+            // Encontra o elemento irmão oculto do elemento clicado
+            var hiddenElement = clickedElement.nextElementSibling;
+            
+            // Alterna a visibilidade do elemento oculto
+            if (hiddenElement.style.display === 'none' || hiddenElement.style.display === '') {
+                hiddenElement.style.display = 'inline'; // Exibe o texto oculto
+                clickedElement.innerHTML = 'Detalhes: '; // Altera o texto do botão para "Mostrar menos"
+            } else {
+                hiddenElement.style.display = 'none'; // Esconde o texto oculto
+                clickedElement.innerHTML = 'Detalhes...'; // Altera o texto do botão de volta para "Leia mais..."
+            }
+        }
+    </script>
     
     <!-- Script for language change 
     <script>

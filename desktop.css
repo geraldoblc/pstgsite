@@ -9,7 +9,7 @@ TV: acima de 1200px
 */
 
 @media screen and (min-width: 769px) {
-    body {
+    header {
         font-size: 1.5em;
     }
     nav {

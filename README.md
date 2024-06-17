@@ -15,3 +15,9 @@ Descrição: PSTG atuando em: Engenharia Elétrica(estudos de rede/linhas de tra
 Linguas do site: (português, inglês e espanhol)
 
 Redes sociais: Facebook, Linkedin, Instagram, WhatsApp.
+
+Obs.:
+Buscar marca registrada "R", para colocar no footer;
+corrigir e tirar algumas classes ".()" do CSS;
+Colocar algo em Desenvolvimento;
+Ver responsividade no celular;
