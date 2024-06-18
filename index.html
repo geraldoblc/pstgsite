@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="desktop.css">
     <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=" crossorigin="anonymous" />
 </head>
 <body>
     <header>
         <div class="language-selector">
-            <select onchange="changeLanguage(this.value)">
-                <option value="pt-br">Português</option>
-                <option value="en">Inglês</option>
-                <option value="es">Espanhol</option>
+            <select id="language-select">
+                <option value="pt-br"><i class="flag-icon flag-icon-br"></i> Português</option>
+                <option value="en"><i class="flag-icon flag-icon-us"></i> English</option>
+                <option value="es"><i class="flag-icon flag-icon-es"></i> Español</option>
             </select>
         </div>
-        <nav>   
-            <p class="special">PSTG</p>
+        <nav>
+            <img src="imagem/logo256b.png" alt="pstg">
             <p class="division">|</p>
-            <a href="">PROJETOS</a></li>
-            <a href="">DESENVOLVIMENTO</a></li>
-            <a href="">ATIVIDADES</a></li>
-            <a href="">CONTATOS</a></li>
+            <a href="#projects">PROJETOS</a></li>
+            <a href="#development">DESENVOLVIMENTO</a></li>
+            <a href="#activities">ATIVIDADES</a></li>
+            <a href="#contacts">CONTATOS</a></li>
         </nav>
     </header>
 
@@ -35,7 +36,7 @@
             <p>Ciência da Computação - Através do desenvolvimento de software e utilização de inteligência artificial para solução de problemas, especialmente na área elétrica.</p>
         </section>
 
-        <section class="projects">
+        <section id="projects" class="projects">
             <h1>PROJETOS</h1>
             <p>Podemos acompanhar nosso progresso e sucesso, através dos projetos em andamento e concluídos.</p>
             <div class="past">
@@ -101,13 +102,13 @@
             </div>
         </section>
 
-        <section>
+        <section id="development" class="development">
             <h1>DESENVOLVIMENTO</h1>
             <p>???</p>
         </section>
 
-        <h1>ATIVIDADES</h1>
-        <section class="container">
+        <h1 id="activities">ATIVIDADES</h1>
+        <section class="activities">
             <div class="course">
                 <img src="imagem/program.jpg" alt="course">
                 <a href="">
@@ -133,7 +134,7 @@
     </main>
 
     <footer>
-        <section class="footer-content">
+        <section id="contacts" class="footer-content">
             <div>
                 <div class="title">
                     <h4>PSTG</h4>
@@ -147,7 +148,7 @@
                 </div>
             </div>
             <div class="logo">
-                <img src="imagem/pstg_logo280.png" alt="PSTG logo">
+                <img src="imagem/logo256b.png" alt="pstg">
             </div>
             <div>
                 <div class="title">
@@ -172,6 +173,9 @@
         <hr>
         <p>&copy; 2024 Copyright PSTG todos os direitos reservados</p>
     </footer>
+
+    <!-- Script for language selector -->
+    <script src="language.js"></script>
 
     <!-- Script for social media icons -->
     <script src="https://kit.fontawesome.com/4ab08ea2b2.js" crossorigin="anonymous"></script>

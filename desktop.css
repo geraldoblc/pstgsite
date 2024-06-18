@@ -12,12 +12,17 @@ TV: acima de 1200px
     header {
         font-size: 1.5em;
     }
-    nav {
-        margin-right: 20px;
+    header img {
+        max-width: 108px;
+        max-height: 108px;
+        margin: -30px 0; 
+    }
+    nav a {
+        padding-left: 10px;
     }
     main {
         min-width: 720px;
-        max-width: 1170px;
+        max-width: 1112px;
     }
     .course, .service {
         flex: 1;

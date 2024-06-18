@@ -18,6 +18,9 @@ Redes sociais: Facebook, Linkedin, Instagram, WhatsApp.
 
 Obs.:
 Buscar marca registrada "R", para colocar no footer;
-corrigir e tirar algumas classes ".()" do CSS;
 Colocar algo em Desenvolvimento;
-Ver responsividade no celular;
+Mudar tudo que está laranja para verde;
+Fixar o header;
+Colocar uma imagem de uma linha de transmissão abaixo do header;
+Ajeitar "a" do header;
+Ajeitar "p" do .more;
