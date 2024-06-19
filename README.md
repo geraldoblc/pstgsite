@@ -19,8 +19,4 @@ Redes sociais: Facebook, Linkedin, Instagram, WhatsApp.
 Obs.:
 Buscar marca registrada "R", para colocar no footer;
 Colocar algo em Desenvolvimento;
-Mudar tudo que está laranja para verde;
-Fixar o header;
 Colocar uma imagem de uma linha de transmissão abaixo do header;
-Ajeitar "a" do header;
-Ajeitar "p" do .more;

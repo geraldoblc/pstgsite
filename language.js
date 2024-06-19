@@ -15,11 +15,7 @@ const languageTexts = {
             // Adicione outros textos do <main> conforme necessário
         },
         footer: {
-            company: 'PSTG Cursos LTDA',
-            cnpj: '12.345.678/0001-00',
-            address: 'Rua Gil Sobral Pinto - 93, Iucas - Teresópolis - RJ, CEP: 12345-000',
-            copyright: '© 2024 Direitos Autorais PSTG todos os direitos reservados'
-            // Adicione outros textos do <footer> conforme necessário
+            contactsTitle: 'CONTATOS',
         }
     },
     'en': {
@@ -37,11 +33,7 @@ const languageTexts = {
             // Adicione outros textos do <main> conforme necessário
         },
         footer: {
-            company: 'PSTG Courses Ltd.',
-            cnpj: '12,345,678 / 0001-00',
-            address: 'Rua Gil Sobral Pinto - 93, Iucas - Teresópolis - RJ, ZIP: 12345-000',
-            copyright: '© 2024 PSTG all rights reserved'
-            // Adicione outros textos do <footer> conforme necessário
+            contactsTitle: 'CONTACTS',
         }
     },
     'es': {
@@ -59,11 +51,7 @@ const languageTexts = {
             // Adicione outros textos do <main> conforme necessário
         },
         footer: {
-            company: 'PSTG Cursos LTDA',
-            cnpj: '12.345.678/0001-00',
-            address: 'Rua Gil Sobral Pinto - 93, Iucas - Teresópolis - RJ, CEP: 12345-000',
-            copyright: '© 2024 Derechos de autor PSTG todos los derechos reservados'
-            // Adicione outros textos do <footer> conforme necessário
+            contactsTitle: 'CONTACTOS',
         }
     }
 };

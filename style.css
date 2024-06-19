@@ -36,6 +36,14 @@ body {
     font-family: var(--fonte-padrao);
 }
 
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 header {
     padding-bottom: 25px;
     background-color: var(--color3);
@@ -89,8 +97,8 @@ main {
     min-width: 320px;
     max-width: 530px;
     margin: auto;
+    margin-top: 78px;
     padding: 20px;
-    
 }
 
 section {
@@ -115,7 +123,7 @@ main strong {
 main a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--color0);
+    color: var(--color3);
 }
 
 .initial {
@@ -142,7 +150,7 @@ main ul li {
     list-style-type: none;    
 }
 
-.projects p {
+#special {
     text-align: center;
     margin: 0 0 20px 0;
 }
@@ -208,7 +216,7 @@ div img {
 
 h1 {
     font-family: var(--fonte-title);
-    color: var(--color0);
+    color: var(--color3);
     font-size: 2em;
     text-align: center;
     background-color: var(--color7);
@@ -218,7 +226,7 @@ h1 {
 }
 
 h2 {
-    background-color: var(--color0);
+    background-color: var(--color3);
     font-family: var(--fonte-title);
     color: var(--color7);
     text-indent: 20px;
@@ -234,7 +242,7 @@ h3 {
     font-size: 1.8em;
     text-align: center;
     font-weight: normal;
-    color: var(--color0);
+    color: var(--color3);
     margin: 20px 15px 10px 15px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
@@ -252,9 +260,10 @@ h3:hover {
 
 h4 {   
     font-family: var(--fonte-title);
-    color: var(--color0);
+    color: var(--color3);
     letter-spacing: 1px;
     font-size: 1.5em;
+    padding-bottom: 10px;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para navegadores WebKit como Chrome e Safari */
     text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
 }
@@ -292,9 +301,7 @@ footer {
     margin: 5px;
 }
 
-.links a {
-    margin: 5px;
-}
+
 
 .links i {
     margin-right: 5px;
