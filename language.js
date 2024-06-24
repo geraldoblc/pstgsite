@@ -8,16 +8,21 @@ const languageTexts = {
             contacts: 'CONTATOS'
         },
         main: {
-            aboutUs: 'QUEM SOMOS',
+            aboutUsTitle: 'QUEM SOMOS',
             projectsTitle: 'PROJETOS',
             developmentTitle: 'DESENVOLVIMENTO',
-            activitiesTitle: 'ATIVIDADES'
-            // Adicione outros textos do <main> conforme necessário
+            activitiesTitle: 'ATIVIDADES',
+            concludedSubT: 'CONCLUÍDOS',
+            runningSubT: 'EM ANDAMENTO',
+            coursesSubT: 'CURSOS',
+            servicesSubT: 'SERVIÇOS',
         },
         footer: {
-            contactsTitle: 'CONTATOS',
+            contactsTitle: 'CONTATOS'
         }
+        
     },
+
     'en': {
         header: {
             projects: 'PROJECTS',
@@ -26,16 +31,20 @@ const languageTexts = {
             contacts: 'CONTACTS'
         },
         main: {
-            aboutUs: 'ABOUT US',
+            aboutUsTitle: 'ABOUT US',
             projectsTitle: 'PROJECTS',
             developmentTitle: 'DEVELOPMENT',
-            activitiesTitle: 'ACTIVITIES'
-            // Adicione outros textos do <main> conforme necessário
+            activitiesTitle: 'ACTIVITIES',
+            concludedSubT: 'CONCLUDED',
+            runningSubT: 'IN PROGRESS',
+            coursesSubT: 'COURSES',
+            servicesSubT: 'SERVICES',
         },
         footer: {
-            contactsTitle: 'CONTACTS',
+            contactsTitle: 'CONTACTS'
         }
     },
+
     'es': {
         header: {
             projects: 'PROYECTOS',
@@ -44,14 +53,17 @@ const languageTexts = {
             contacts: 'CONTACTOS'
         },
         main: {
-            aboutUs: 'QUIÉNES SOMOS',
+            aboutUsTitle: 'QUIÉNES SOMOS',
             projectsTitle: 'PROYECTOS',
             developmentTitle: 'DESARROLLO',
-            activitiesTitle: 'ACTIVIDADES'
-            // Adicione outros textos do <main> conforme necessário
+            activitiesTitle: 'ACTIVIDADES',
+            concludedSubT: 'CONCLUIDOS',
+            runningSubT: 'EN CURSO',
+            coursesSubT: 'CURSOS',
+            servicesSubT: 'SERVICIOS',
         },
         footer: {
-            contactsTitle: 'CONTACTOS',
+            contactsTitle: 'CONTACTOS'
         }
     }
 };
@@ -67,18 +79,17 @@ function updateLanguage(language) {
     document.querySelector('a[href="#contacts"]').textContent = texts.header.contacts;
 
     // Atualiza o conteúdo principal (main)
-    document.querySelector('.initial h1').textContent = texts.main.aboutUs;
+    document.querySelector('.initial h1').textContent = texts.main.aboutUsTitle;
     document.querySelector('#projects h1').textContent = texts.main.projectsTitle;
     document.querySelector('#development h1').textContent = texts.main.developmentTitle;
     document.querySelector('#activities').textContent = texts.main.activitiesTitle;
-    // Adicione outras atualizações conforme necessário para outros elementos do <main>
+    document.querySelector('#concluded').textContent = texts.main.concludedSubT;
+    document.querySelector('#running').textContent = texts.main.runningSubT;
+    document.querySelector('#courses').textContent = texts.main.coursesSubT;
+    document.querySelector('#services').textContent = texts.main.servicesSubT;
 
     // Atualiza o rodapé (footer)
-    document.querySelector('.footer-content h4').textContent = texts.footer.company;
-    document.querySelector('.footer-content p:nth-of-type(1)').textContent = texts.footer.company;
-    document.querySelector('.footer-content p:nth-of-type(2)').textContent = texts.footer.cnpj;
-    document.querySelector('.footer-content p:nth-of-type(3)').textContent = texts.footer.address;
-    document.querySelector('footer p:last-of-type').textContent = texts.footer.copyright;
+    document.querySelector('#contacts').textContent = texts.footer.contactsTitle;
 }
 
 // Adiciona um listener para mudança no seletor de idiomas
