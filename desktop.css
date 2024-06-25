@@ -27,12 +27,11 @@ TV: acima de 1200px
     main {
         min-width: 720px;
         max-width: 1112px;
-        margin-top: 104px;
     }
     .course, .service {
         flex: 1;
     }
     .links a {
-        margin: 5px;
+        margin: 5px 5px 0 0;
     }
 }
