@@ -15,11 +15,11 @@ TV: acima de 1200px
 :root {
     --color0: #e25822;
     --color1: #BA5C12;
-    --color2: #515931;
+    --color2: #717941;
     --color3: #899C4E;
     --color4: #0D0D0D;
     --color5: #1F2421;
-    --color6: #929487;
+    --color6: #d2d4c7;
     --color7: #F5F5F5;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
@@ -96,15 +96,17 @@ nav a:hover {
     width: 100%;
     min-height: 90px;
     margin-bottom: -5px;
-    padding-top: 70px;
+    padding-top: 78px;
 }
 
 main {
-    background-color: var(--color7);
+    background-color: var(--color6);
     min-width: 320px;
     max-width: 530px;
     margin: auto;
-    padding: 20px;
+    padding: 0 20px;
+    margin-top: -24px;
+    margin-bottom: -24px;
 }
 
 section {
@@ -132,28 +134,74 @@ main a {
     color: var(--color3);
 }
 
-.initial {
-    background-image: url('imagem/worker1024.jpg');
+.welcome h1 {
+    color: var(--color4);
+    margin-top: 20px;
+}
+
+.initial, .doing, .benefits {
     background-size: cover; /* Faz com que a imagem cubra toda a área */
     background-position: center; /* Centraliza a imagem no elemento */
     background-repeat: no-repeat; /* Evita repetir a imagem */
     border-radius: 10px;
     text-align: left;
-    margin: 10px 30px 0 30px;
+    margin: 30px 30px 0 30px;
+    background-color: rgba(200, 200, 200, 0.8);
+}
+
+.initial {
+    background-image: url('../imagem/worker1024.jpg');
+}
+
+.doing {
+    position: relative; /* Garante que o posicionamento do pseudo-elemento funcione corretamente */
+    background-image: url('../imagem/trello.png');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+}
+
+.doing h1, .doing p, .doing ul, .doing ol {
+    position: relative; /* Garante que o conteúdo da .doing tenha uma pilha de contexto */
+    z-index: 2; /* Coloca o conteúdo acima do overlay */
+}
+
+.doing::before {
+    content: ''; /* Cria um pseudo-elemento para o overlay */
+    position: absolute; /* Posiciona o pseudo-elemento sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Cor preta com transparência */
+    z-index: 1; /* Coloca o overlay sobre a imagem de fundo */
+    border-radius: 10px;
+}
+
+.initial p, .doing p, .benefits p {
+    list-style-type: none;
+    margin: 0;
+    background-color: rgba(245, 245, 245, 0.8);
 }
 
 .initial p {
-    background-color: rgba(255, 255, 255, 0.4);
     padding: 5px 15px;
+}
+
+.doing p, .benefits p {
+    padding: 2px 5px;
+}
+
+main ol li {
     list-style-type: none;
-    margin: 0;
 }
 
 main ul li {
-    margin: 0 0 0 35px;
-    padding: 5px;
+    padding: 0 5px;
     text-align: left;
     list-style-type: none;    
+}
+
+#projects, #development, #activities {
+    padding-top: 78px;
 }
 
 .special {
@@ -164,7 +212,7 @@ main ul li {
 .projects .present, .projects .past {
     margin: 20px 0 0 0;
     text-align: center;
-    background-color: rgba(200, 200, 200, 0.4);
+    background-color: rgba(200, 200, 200, 0.8);
     padding: 1px 20px;
     border-radius: 10px;
 }
@@ -221,7 +269,7 @@ div img {
 h1 {
     font-family: var(--fonte-title);
     color: var(--color3);
-    font-size: 2em;
+    font-size: 1.6em;
     text-align: center;
     background-color: var(--color7);
     margin-bottom: 15px;
@@ -230,20 +278,23 @@ h1 {
 }
 
 h2 {
-    background-color: var(--color3);
+    background-image: linear-gradient(to right, var(--color2), var(--color3));
     font-family: var(--fonte-title);
+    font-size: 1.25em;
     color: var(--color7);
     text-indent: 20px;
     font-weight: normal;
-    margin: 30px 0px 10px 0px;
-    padding: 3px;
+    margin: 15px 0px 5px 0px;
+    padding: 2px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     
 }
 
 h3 {
     font-family: var(--fonte-destaque);
     font-style: normal;
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-align: center;
     font-weight: normal;
     color: var(--color3);
@@ -266,7 +317,7 @@ h4 {
     font-family: var(--fonte-title);
     color: var(--color3);
     letter-spacing: 1px;
-    font-size: 1.5em;
+    font-size: 1.25em;
     padding-bottom: 10px;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para navegadores WebKit como Chrome e Safari */
     text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
