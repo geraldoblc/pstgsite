@@ -22,7 +22,8 @@ TV: acima de 1200px
     }
     nav a:hover {
         margin: 3px 0;
-        transform: translate(-4px, -4px);
+        transform: translate(-1px, -4px);
+        border-bottom: 2px solid var(--color7);
     }
     .first-image {
         margin-bottom: -10px;
@@ -31,10 +32,10 @@ TV: acima de 1200px
     main {
         min-width: 720px;
         max-width: 1112px;
-        margin-top: -19px;
+        margin-top: -18px;
         font-size: 1.2em;
     }
-    #projects, #development, #activities {
+    #activities {
         padding-top: 104px;
     }
     .course, .service {

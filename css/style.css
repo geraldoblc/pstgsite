@@ -76,20 +76,20 @@ header img {
 
 .division {
     font-size: 1.35em; /* Aumentando o tamanho da fonte */
+    padding-right: 5px;
 }
 
 nav a {
     color: var(--color5);
-    padding: 5px;
-    border-radius: 20px;
+    padding: 4px 10px;
     text-decoration: none;
 }
 
 nav a:hover {
     transform: translate(-1px, -1px);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     color: black;
     transition-duration: .25s;
+    border-bottom: 1px solid var(--color7);
 }
 
 .first-image {
@@ -135,28 +135,47 @@ main a {
 }
 
 .welcome h1 {
-    color: var(--color4);
+    color: black;
     margin-top: 20px;
+    margin-bottom: -8px;
+    background-color: var(--color6);
 }
 
-.initial, .doing, .benefits {
+.initial, .doing, .benefits, .projects {
     background-size: cover; /* Faz com que a imagem cubra toda a área */
     background-position: center; /* Centraliza a imagem no elemento */
     background-repeat: no-repeat; /* Evita repetir a imagem */
     border-radius: 10px;
     text-align: left;
     margin: 30px 30px 0 30px;
-    background-color: rgba(200, 200, 200, 0.8);
+    background-color: rgba(82, 83, 78, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .initial {
+    background-image: url('../imagem/programmer1024.jpg');
+}
+
+#initialee {
     background-image: url('../imagem/worker1024.jpg');
 }
 
 .doing {
     position: relative; /* Garante que o posicionamento do pseudo-elemento funcione corretamente */
-    background-image: url('../imagem/trello.png');
+    background-image: url('../imagem/code1236.png');
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+}
+
+#doingee {
+    background-image: url('../imagem/rede1024.jpg');
+}
+
+.final {
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; /* Evita repetir a imagem */
+    text-align: left;
+    margin: -25px 30px 25px 30px;
 }
 
 .doing h1, .doing p, .doing ul, .doing ol {
@@ -171,23 +190,44 @@ main a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Cor preta com transparência */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com transparência */
     z-index: 1; /* Coloca o overlay sobre a imagem de fundo */
     border-radius: 10px;
 }
 
-.initial p, .doing p, .benefits p {
+.initial p, .doing p, .benefits ul li p {
     list-style-type: none;
     margin: 0;
-    background-color: rgba(245, 245, 245, 0.8);
+    padding: 5px;
+    background-color: rgba(245, 245, 245, 0.85);
 }
 
-.initial p {
+.initial p, .final p {
     padding: 5px 15px;
 }
 
 .doing p, .benefits p {
     padding: 2px 5px;
+}
+
+.final h4 {
+    color: black;
+}
+
+section img {
+    width: 100%;
+}
+
+#teamti {
+    min-width: 320px;
+    max-width: 530px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#teamee {
+    max-width: 530px;
+    border-radius: 50%;
 }
 
 main ol li {
@@ -200,29 +240,28 @@ main ul li {
     list-style-type: none;    
 }
 
-#projects, #development, #activities {
-    padding-top: 78px;
+#benefits-ee-end {
+    margin-top: 15px;
 }
 
-.special {
-    text-align: center;
-    padding: 20px;
+#activities {
+    padding-top: 78px;
 }
 
 .projects .present, .projects .past {
     margin: 20px 0 0 0;
     text-align: center;
-    background-color: rgba(200, 200, 200, 0.8);
+    background-color: rgba(82, 83, 78, 0.2);
     padding: 1px 20px;
     border-radius: 10px;
 }
 
 .projects ul li {
-    margin: 10px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
+    margin: 5px;
+    padding: 8px;
+    background-color: rgba(245, 245, 245, 0.85);
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .hidden {
@@ -239,13 +278,6 @@ main ul li {
     transition: transform 0.25s;
     color: black;
     font-weight: bold;
-}
-
-.development img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
 }
 
 .activities {
@@ -273,6 +305,8 @@ h1 {
     text-align: center;
     background-color: var(--color7);
     margin-bottom: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para navegadores WebKit como Chrome e Safari */
     text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
 }
