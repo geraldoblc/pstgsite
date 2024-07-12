@@ -18,5 +18,5 @@ Redes sociais: Facebook, Linkedin, Instagram, WhatsApp.
 
 Obs.:
 Buscar marca registrada "R", para colocar no footer;
-Colocar algo em Desenvolvimento;
-Colocar uma imagem de uma linha de transmissão abaixo do header;
+Colocar link em "TI-PSTG" e EE-PSTG" no texto;
+Fazer Gráfico em pizza dos estudos e colocar em projetos EE.

@@ -34,6 +34,7 @@ TV: acima de 1200px
 
 body {
     font-family: var(--fonte-padrao);
+    background-color: var(--color7);
 }
 
 .fixed-header {
@@ -96,7 +97,7 @@ nav a:hover {
     width: 100%;
     min-height: 90px;
     margin-bottom: -5px;
-    padding-top: 78px;
+    padding-top: 77px;
 }
 
 main {
@@ -106,7 +107,7 @@ main {
     margin: auto;
     padding: 0 20px;
     margin-top: -24px;
-    margin-bottom: -24px;
+    margin-bottom: -25px;
 }
 
 section {
@@ -136,6 +137,7 @@ main a {
 
 .welcome h1 {
     color: black;
+    font-size: 1.25em;
     margin-top: 20px;
     margin-bottom: -8px;
     background-color: var(--color6);
@@ -202,7 +204,7 @@ main a {
     background-color: rgba(245, 245, 245, 0.85);
 }
 
-.initial p, .final p {
+.final p {
     padding: 5px 15px;
 }
 
