@@ -108,23 +108,24 @@ nav a:hover {
 }
 
 main {
-    background-color: var(--color6);
+    background-color: var(--color5);
     min-width: 320px;
     max-width: 530px;
     margin: auto;
-    padding: 0 20px;
     margin-top: -95px;
     margin-bottom: -25px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     position: relative;
     z-index: 2;
+    overflow: hidden;
 }
 
 section {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
-    padding: 25px;
-    margin: 25px 0;
+    padding: 60px 0;
 }
 
 main p {
@@ -147,26 +148,24 @@ main a {
 }
 
 .welcome h1 {
-    color: black;
     font-size: 1.25em;
     margin-top: 45px;
     margin-bottom: -8px;
     background-color: var(--color6);
 }
 
-.initial, .doing, .benefits, .projects {
-    background-size: cover; /* Faz com que a imagem cubra toda a área */
-    background-position: center; /* Centraliza a imagem no elemento */
+.initial, .benefits {
+    background-image: url('../imagem/code927x927.png');
+    background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat; /* Evita repetir a imagem */
-    border-radius: 10px;
-    text-align: left;
-    margin: 60px 30px;
-    background-color: rgba(82, 83, 78, 0.2);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 60px 0px;
+    position: relative;
 }
 
 .initial {
-    background-image: url('../imagem/programmer1024.jpg');
+    background-position: top;
+    text-align: left;
 }
 
 #initialee {
@@ -174,13 +173,18 @@ main a {
 }
 
 .doing {
-    position: relative; /* Garante que o posicionamento do pseudo-elemento funcione corretamente */
-    background-image: url('../imagem/code1236.png');
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-color: var(--color7);
+    text-align: left;
+    margin: 60px 0px;
 }
 
 #doingee {
     background-image: url('../imagem/rede1024.jpg');
+}
+
+.benefits {
+    background-position: center;
+    text-align: right;
 }
 
 .final {
@@ -188,15 +192,22 @@ main a {
     background-position: center; /* Centraliza a imagem no elemento */
     background-repeat: no-repeat; /* Evita repetir a imagem */
     text-align: left;
-    margin: -25px 30px 25px 30px;
+    margin: -25px 25px 25px 25px;
 }
 
-.doing h1, .doing p, .doing ul, .doing ol {
+.initial h1, .initial p, .benefits h1, .benefits p, .benefits ul, .benefits ol {
+    padding: 10px;
+    margin: 0px;
+    background-color: rgba(245, 245, 245, 0.8);
     position: relative; /* Garante que o conteúdo da .doing tenha uma pilha de contexto */
     z-index: 2; /* Coloca o conteúdo acima do overlay */
 }
 
-.doing::before {
+.benefits h1, .benefits p, .benefits ul, .benefits ol {
+    max-width: 556px;
+}
+
+.initial::before {
     content: ''; /* Cria um pseudo-elemento para o overlay */
     position: absolute; /* Posiciona o pseudo-elemento sobre a imagem */
     top: 0;
@@ -205,10 +216,10 @@ main a {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Cor preta com transparência */
     z-index: 1; /* Coloca o overlay sobre a imagem de fundo */
-    border-radius: 10px;
+    
 }
 
-.initial p, .doing p, .benefits ul li p {
+.doing p, .benefits ul li p {
     list-style-type: none;
     margin: 0;
     padding: 5px;
@@ -313,15 +324,11 @@ div img {
 
 h1 {
     font-family: var(--fonte-title);
-    color: var(--color3);
+    color: black;
     font-size: 1.6em;
     text-align: center;
     background-color: var(--color7);
     margin-bottom: 15px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para navegadores WebKit como Chrome e Safari */
-    text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
 }
 
 h2 {
@@ -376,6 +383,8 @@ footer {
     font-family: var(--fonte-footer);
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 999;    
 }
 
 .footer-content {
