@@ -125,7 +125,7 @@ section {
     position: relative;
     background-color: var(--color7);
     text-align: center;
-    margin: 50px 0;
+    margin: 48px 0;
 }
 
 main p {
@@ -154,14 +154,14 @@ main a {
     background-color: var(--color7);
 }
 
-.initial, .doing, .benefits {
-    background-image: url('../imagem/code927x927.png');
+.initial, .doing, .benefits, .projects, .activities {
+    background-image: url('../imagem/imagem900x620.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat; /* Evita repetir a imagem */
     margin: 40px 0px;
     position: relative;
-    background-position: bottom;
+    background-position: top;
 }
 
 section.initial > div, section.benefits > div {
@@ -179,10 +179,6 @@ section.initial > div, section.benefits > div {
     z-index: 1; /* Coloca o overlay sobre a imagem de fundo */
 }
 
-#initialee {
-    background-image: url('../imagem/worker1024.jpg');
-}
-
 
 .doing {
     background-color: var(--color7);
@@ -190,9 +186,7 @@ section.initial > div, section.benefits > div {
     margin: 60px 0px;
 }
 
-#doingee {
-    background-image: url('../imagem/rede1024.jpg');
-}
+
 
 .final {
     background-size: cover; /* Faz com que a imagem cubra toda a área */
@@ -263,6 +257,10 @@ section img {
     flex-wrap: wrap;
     justify-content: center;
     border-top: black 1px solid;
+}
+
+.partners h1 {
+    margin: 20px 0 0 0;
 }
 
 .partners div img {
