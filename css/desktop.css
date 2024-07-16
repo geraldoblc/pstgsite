@@ -31,7 +31,7 @@ TV: acima de 1200px
     }
     main {
         min-width: 720px;
-        max-width: 1112px;
+        max-width: 100%;
         margin-top: -180px;
         font-size: 1.2em;
     }
@@ -40,8 +40,11 @@ TV: acima de 1200px
         margin-bottom: -8px;
         padding: 30px 0;
     }
-    .initial, .doing, .benefits {
+    .initial, .doing, .benefits, .projects, .activities {
         margin: 57px 0px;
+    }
+    section.initial > div, section.benefits > div , section.doing > div, section.activities > div, section.projects > div {
+        padding: 15px 30px;
     }
     #activities {
         padding-top: 104px;

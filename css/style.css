@@ -21,7 +21,7 @@ TV: acima de 1200px
     --color3: #899C4E;
     --color4: #0D0D0D;
     --color5: #1F2421;
-    --color6: #d2d4c7;
+    --color6: #e2e4d7;
     --color7: #F5F5F5;
 
     --fonte-padrao: serif, Arial, Verdana, Helvetica, sans-serif;
@@ -33,11 +33,12 @@ TV: acima de 1200px
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho do elemento */
 }
 
 body {
     font-family: var(--fonte-padrao);
-    background-color: var(--color7);
+    background-color: var(--color6);
 }
 
 .fixed-header {
@@ -108,23 +109,23 @@ nav a:hover {
 }
 
 main {
-    background-color: var(--color6);
+    background-color: var(--color7);
     min-width: 320px;
     max-width: 530px;
     margin: auto;
-    padding: 0 20px;
     margin-top: -95px;
-    margin-bottom: -25px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     position: relative;
     z-index: 2;
+    overflow: hidden;
 }
 
 section {
+    position: relative;
+    background-color: var(--color7);
     text-align: center;
-    padding: 25px;
-    margin: 25px 0;
+    margin: 50px 0;
 }
 
 main p {
@@ -147,36 +148,46 @@ main a {
 }
 
 .welcome h1 {
-    color: black;
     font-size: 1.25em;
-    margin-top: 45px;
-    margin-bottom: -8px;
-    background-color: var(--color6);
+    margin-top: 40px;
+    margin-bottom: -11px;
+    background-color: var(--color7);
 }
 
-.initial, .doing, .benefits, .projects {
-    background-size: cover; /* Faz com que a imagem cubra toda a área */
-    background-position: center; /* Centraliza a imagem no elemento */
+.initial, .doing, .benefits {
+    background-image: url('../imagem/code927x927.png');
+    background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat; /* Evita repetir a imagem */
-    border-radius: 10px;
-    text-align: left;
-    margin: 60px 30px;
-    background-color: rgba(82, 83, 78, 0.2);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px 0px;
+    position: relative;
+    background-position: bottom;
 }
 
-.initial {
-    background-image: url('../imagem/programmer1024.jpg');
+section.initial > div, section.benefits > div {
+    margin-left: auto; /* Move a div para a direita */
+}
+
+.initial::before, .doing::before, .benefits::before, .activities::before, .projects::before {
+    content: ''; /* Cria um pseudo-elemento para o overlay */
+    position: absolute; /* Posiciona o pseudo-elemento sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Cor preta com transparência */
+    z-index: 1; /* Coloca o overlay sobre a imagem de fundo */
 }
 
 #initialee {
     background-image: url('../imagem/worker1024.jpg');
 }
 
+
 .doing {
-    position: relative; /* Garante que o posicionamento do pseudo-elemento funcione corretamente */
-    background-image: url('../imagem/code1236.png');
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-color: var(--color7);
+    text-align: left;
+    margin: 60px 0px;
 }
 
 #doingee {
@@ -188,31 +199,34 @@ main a {
     background-position: center; /* Centraliza a imagem no elemento */
     background-repeat: no-repeat; /* Evita repetir a imagem */
     text-align: left;
-    margin: -25px 30px 25px 30px;
+    padding: 25px;
+    max-width: 556px;
+    margin: auto;
+    border-top: black 1px solid;
 }
 
-.doing h1, .doing p, .doing ul, .doing ol {
+section.initial > div, section.benefits > div , section.doing > div, section.activities > div, section.projects > div {
+    max-width: 556px;
+    background-color: var(--color7);
+    position: relative;
+    z-index: 2;
+}
+
+section.doing > div, section.activities > div, section.projects > div {
+    margin-right: auto; /* Move a div para a direita */
+}
+
+.initial h1, .initial p, .benefits h1, .benefits p, .benefits ul, .benefits ol {
+    padding: 10px;
+    margin: 0px;
     position: relative; /* Garante que o conteúdo da .doing tenha uma pilha de contexto */
     z-index: 2; /* Coloca o conteúdo acima do overlay */
 }
 
-.doing::before {
-    content: ''; /* Cria um pseudo-elemento para o overlay */
-    position: absolute; /* Posiciona o pseudo-elemento sobre a imagem */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com transparência */
-    z-index: 1; /* Coloca o overlay sobre a imagem de fundo */
-    border-radius: 10px;
-}
-
-.initial p, .doing p, .benefits ul li p {
+.doing p, .benefits ul li p {
     list-style-type: none;
     margin: 0;
     padding: 5px;
-    background-color: rgba(245, 245, 245, 0.85);
 }
 
 .final p {
@@ -223,8 +237,9 @@ main a {
     padding: 2px 5px;
 }
 
-.final h4 {
-    color: black;
+.final h1 {
+    text-align: left;
+    font-size: 1.25em;
 }
 
 section img {
@@ -241,6 +256,18 @@ section img {
 #teamee {
     max-width: 530px;
     border-radius: 50%;
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: black 1px solid;
+}
+
+.partners div img {
+    max-width: 120px;
+    margin: 40px;
 }
 
 main ol li {
@@ -312,16 +339,12 @@ div img {
 }
 
 h1 {
-    font-family: var(--fonte-title);
-    color: var(--color3);
+    font-family: var(--fonte-padrao);
+    color: black;
     font-size: 1.6em;
     text-align: center;
     background-color: var(--color7);
     margin-bottom: 15px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para navegadores WebKit como Chrome e Safari */
-    text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
 }
 
 h2 {
@@ -335,7 +358,6 @@ h2 {
     padding: 2px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    
 }
 
 h3 {
@@ -364,7 +386,7 @@ h4 {
     font-family: var(--fonte-title);
     color: var(--color3);
     letter-spacing: 1px;
-    font-size: 1.25em;
+    font-size: 1.05em;
     padding-bottom: 10px;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para navegadores WebKit como Chrome e Safari */
     text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
@@ -376,6 +398,12 @@ footer {
     font-family: var(--fonte-footer);
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 999;
+}
+
+footer p {
+    font-size: 0.75em;
 }
 
 .footer-content {
@@ -410,4 +438,18 @@ footer {
 
 .links i {
     margin-right: 5px;
+    font-size: 1.8em;
+}
+
+.links a {
+    margin: 0 5px;
+}
+
+.links a:hover {
+    transition: transform 0.25s;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+#copyright {
+    border-top: 1px solid black;
 }

@@ -155,14 +155,16 @@ main a {
 }
 
 .initial, .doing, .benefits, .projects, .activities {
-    background-image: url('../imagem/imagem900x620.jpg');
+    background-image: url('../imagem/rede1024.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat; /* Evita repetir a imagem */
     margin: 40px 0px;
     position: relative;
-    background-position: top;
+    background-position: bottom;
 }
+
+
 
 section.initial > div, section.benefits > div {
     margin-left: auto; /* Move a div para a direita */
@@ -186,8 +188,6 @@ section.initial > div, section.benefits > div {
     margin: 60px 0px;
 }
 
-
-
 .final {
     background-size: cover; /* Faz com que a imagem cubra toda a área */
     background-position: center; /* Centraliza a imagem no elemento */
@@ -200,7 +200,8 @@ section.initial > div, section.benefits > div {
 }
 
 section.initial > div, section.benefits > div , section.doing > div, section.activities > div, section.projects > div {
-    max-width: 556px;
+    min-width: 320px;
+    max-width: 50%;
     background-color: var(--color7);
     position: relative;
     z-index: 2;
@@ -288,10 +289,10 @@ main ul li {
 
 .projects .present, .projects .past {
     margin: 20px 0 0 0;
-    text-align: center;
-    background-color: rgba(82, 83, 78, 0.2);
-    padding: 1px 20px;
-    border-radius: 10px;
+}
+
+.projects .past {
+    font-size: 0.8em;
 }
 
 .projects ul li {
@@ -299,7 +300,7 @@ main ul li {
     padding: 8px;
     background-color: rgba(245, 245, 245, 0.85);
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .hidden {

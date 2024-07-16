@@ -155,7 +155,7 @@ main a {
 }
 
 .initial, .doing, .benefits {
-    background-image: url('../imagem/code927x927.png');
+    background-image: url('../imagem/eesquare.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat; /* Evita repetir a imagem */
@@ -210,6 +210,9 @@ section.initial > div, section.benefits > div , section.doing > div, section.act
     background-color: var(--color7);
     position: relative;
     z-index: 2;
+    padding: 10px 20px;
+    min-width: 320px;
+    max-width: 50%;
 }
 
 section.doing > div, section.activities > div, section.projects > div {
@@ -263,6 +266,7 @@ section img {
     flex-wrap: wrap;
     justify-content: center;
     border-top: black 1px solid;
+    padding-top: 20px;
 }
 
 .partners div img {

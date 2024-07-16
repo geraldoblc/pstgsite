@@ -31,7 +31,7 @@
         </div>
     </header>
 
-    <img src="imagem/partido1920x648.jpg" alt="lines" class="first-image">
+    <img src="imagem/EE-PSTG.jpg" alt="lines" class="first-image">
 
     <main>
         <section class="welcome">
@@ -167,34 +167,21 @@
                 <div class="past">
                     <h2 id="concluded">CONCLUÍDOS</h2>
                     <ul>
-                        <li>
-                            Projeto 001: Estudo das linhas de transmissão entre Terminal Janaúba e Juscelino.
-                            <span onclick="showMore(this)" class="more">Detalhes...</span>
-                            <span class="hidden">
-                                <p>Início: 14/01/2024, Conclusão: 01/03/2024.</p>
-                                <p>Serviço prestado à <strong>FURNAS</strong> - Estudos de tensões em trechos de linhas e reatores neutros, além da energia dissipada nos para-raios.</p>
-                                <p>Nota do cliente: "Obtivemos o estudo completo e preciso, abaixo do tempo estimado. Com custo dentro do valor de mercado."</p>
-                            </span>
-                        </li>
-                        <li>
-                            Projeto ATP: Desenvolvimento de software para extração de piores casos de tensão e energia em trechos de linhas.
-                            <span onclick="showMore(this)" class="more">Detalhes...</span>
-                            <span class="hidden">
-                                <p>Início: 22/04/2024, Conclusão: 28/06/2024.</p>
-                                <p>Serviço prestado à <strong>GERAÇÃO 7</strong> - Software capaz de extrair dados, filtrando-os e plotando-os em gráficos, fornecendo relatórios e tabelas detalhadas dos estudos realizados.</p>
-                                <p>Nota do cliente: "A qualidade do software desenvolvido surpreendeu nossa equipe técnica, por sua usabilidade e por mostrar-se altamente intuitivo."</p>
-                            </span>
-                        </li>
-                        <li>
-                            Projeto xxx: ...
-                            <span onclick="showMore(this)" class="more">Detalhes...</span>
-                            <span class="hidden">
-                                <p>Início: xx/xx/202x, Conclusão: xx/xx/202x.</p>
-                                <p>Serviço prestado à <strong>XXX</strong> - ...</p>
-                                <p>Nota do cliente: "..."</p>
-                            </span>
-                        </li>
+                        <!--
+                        <li>Estudos de Margem de Conexão (0)</li>
+                        <li>Estudos de Mínimo Custo Global (0)</li>
+                        -->
+                        <li>Estudos de Acesso e Conexão (4)</li>
+                        <li>Estudos Sistêmicos (6)</li>
+                        <li>Estudos de Transitórios de Manobra (60)</li>
+                        <li>Estudos de Fenômenos de Transitórios Eletromagnéticos (99)</li>
+                        <li>Modelagem de Dispositivos de Eletrônica de Potência (19)</li>
+                        <li>Estudos em Linhas de Transmissão Subterrâneas em Alta Tensão (12)</li>
+                        <li>Projeto de linha (11)</li>
+                        <li>Outros (1)</li>
+                        <li>Total (212)</li>
                     </ul>
+                    <div id="graficoPizza" class="grafico-pizza"></div>
                 </div>
                 <div class="present">
                     <h2 id="running">EM ANDAMENTO</h2>
@@ -298,6 +285,10 @@
 
     <!-- Script for details / more -->
     <script src="details.js"></script>
+
+    <!-- Script for graphics -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="graphics.js"></script>
     
 </body>
 </html>
