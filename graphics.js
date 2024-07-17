@@ -1,48 +1,88 @@
 // Função para carregar o Google Charts
 google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(desenharGraficoPizza);
+google.charts.setOnLoadCallback(drawGraphic1);
+google.charts.setOnLoadCallback(drawGraphic2); // Chama a função para o gráfico2 também
 
-// Função para desenhar o gráfico de pizza
-function desenharGraficoPizza() {
-    // Dados das categorias
+// Função para desenhar o gráfico de pizza (gráfico1)
+function drawGraphic1() {
     const dados = [
-        ['Categoria', 'Valor'],
-        ['Estudos de Margem de Conexão', 0],
-        ['Estudos de Mínimo Custo Global', 0],
-        ['Estudos de Acesso e Conexão', 4],
-        ['Estudos Sistêmicos', 6],
-        ['Estudos de Transitórios de Manobra', 60],
-        ['Estudos de Fenômenos de Transitórios Eletromagnéticos', 99],
-        ['Modelagem de Dispositivos de Eletrônica de Potência', 19],
-        ['Estudos em Linhas de Transmissão Subterrâneas em Alta Tensão', 12],
-        ['Projeto de linha', 11],
-        ['Outros', 1]
+        ['Category', 'Value'],
+        ['Connection Margin Studies', 0],
+        ['Global Minimum Cost Studies', 0],
+        ['Access and Connection Studies', 4],
+        ['Systemic Studies', 6],
+        ['Maneuver Transient Studies', 60],
+        ['Studies of Electromagnetic Transient Phenomena', 99],
+        ['Power Electronics Device Modeling', 19],
+        ['Studies on High Voltage Underground Transmission Lines', 12],
+        ['Line Project', 11],
+        ['Others', 1]
     ];
 
-    // Converter os dados para o formato apropriado para o Google Charts
     const data = google.visualization.arrayToDataTable(dados);
 
-    // Opções do gráfico de pizza
     const options = {
-        title: 'Projetos Concluídos',
-        width: '100%', // Largura do gráfico
-        height: '100%', // Altura do gráfico
-        legend: 'none', // Oculta a legenda
-        slices: {  // Configuração individual das fatias
+        title: 'Completed Projects',
+        width: '100%',
+        height: '100%',
+        legend: 'none',
+        slices: {
             75: {offset: 0.5}
         },
         chartArea: {
-            left: 0, // Margem à esquerda (em relação à largura do gráfico)
-            top: 0, // Margem superior (em relação à altura do gráfico)
-            width: '100%', // Largura da área do gráfico (em relação à largura do gráfico)
-            height: '100%' // Altura da área do gráfico (em relação à altura do gráfico)
+            left: 0,
+            top: 0,
+            width: '100%',
+            height: '100%'
         }
     };
 
-    // Instanciar e desenhar o gráfico de pizza dentro da div #graficoPizza
-    const chart = new google.visualization.PieChart(document.getElementById('graficoPizza'));
+    const chart = new google.visualization.PieChart(document.getElementById('graphic1'));
     chart.draw(data, options);
 }
 
-// Função para redimensionar o gráfico quando a janela for redimensionada
-window.addEventListener('resize', desenharGraficoPizza);
+// Função para desenhar o gráfico de pizza (gráfico2)
+function drawGraphic2() {
+    const dados2 = [
+        ['Category', 'Value'],
+        ['RSS \'Resonance\'', 16],
+        ['CEM \'Electromagnetic Field\'', 16],
+        ['TRV \'Transient Restoration Voltage\'', 25],
+        ['HVDC \'High Voltage Direct Current\'', 13],
+        ['SVC \'Static Var Compensator\'', 4],
+        ['Wind Turbine', 4],
+        ['Solar', 8],
+        ['Interference', 6],
+        ['Transmission Lines', 23],
+        ['Secondary Arc', 28],
+        ['Underground Lines', 12]
+    ];
+
+    const data2 = google.visualization.arrayToDataTable(dados2);
+
+    const options2 = {
+        title: 'New Projects',
+        width: '100%',
+        height: '100%',
+        legend: 'none',
+        pieSliceText: 'value',
+        slices: {
+            75: {offset: 0.5}
+        },
+        chartArea: {
+            left: 0,
+            top: 0,
+            width: '100%',
+            height: '100%'
+        }
+    };
+
+    const chart2 = new google.visualization.PieChart(document.getElementById('graphic2'));
+    chart2.draw(data2, options2);
+}
+
+// Função para redimensionar os gráficos quando a janela for redimensionada
+window.addEventListener('resize', function() {
+    drawGraphic1();
+    drawGraphic2(); // Chama a função de desenho do gráfico2 também
+});

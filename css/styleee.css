@@ -181,7 +181,6 @@ section.initial > div, section.benefits > div {
     z-index: 1; /* Coloca o overlay sobre a imagem de fundo */
 }
 
-
 .doing {
     background-color: var(--color7);
     text-align: left;
@@ -258,11 +257,10 @@ section img {
     flex-wrap: wrap;
     justify-content: center;
     border-top: black 1px solid;
+    padding-top: 20px;
 }
 
-.partners h1 {
-    margin: 20px 0 0 0;
-}
+
 
 .partners div img {
     max-width: 120px;

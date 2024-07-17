@@ -55,7 +55,6 @@ header {
     font-family: var(--fonte-destaque);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 2px;
-   
 }
 
 header div {
@@ -75,9 +74,9 @@ nav {
 }
 
 header img {
-    max-width: 72px;
-    max-height: 72px;
-    margin: -20px 0;
+    max-width: 90px;
+    max-height: 90px;
+    margin: -29px 0;
     float: left;
 }
 
@@ -104,18 +103,18 @@ nav a:hover {
     width: 100%;
     min-height: 90px;
     margin-bottom: -5px;
-    padding-top: 77px;
+    padding-top: 79px;
     
 }
 
 main {
     background-color: var(--color7);
     min-width: 320px;
-    max-width: 530px;
+    max-width: 769px;
     margin: auto;
-    margin-top: -95px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    margin-top: -110px;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
     position: relative;
     z-index: 2;
     overflow: hidden;
@@ -125,7 +124,7 @@ section {
     position: relative;
     background-color: var(--color7);
     text-align: center;
-    margin: 50px 0;
+    margin: 48px 0;
 }
 
 main p {
@@ -149,12 +148,12 @@ main a {
 
 .welcome h1 {
     font-size: 1.25em;
-    margin-top: 40px;
+    margin-top: 48px;
     margin-bottom: -11px;
     background-color: var(--color7);
 }
 
-.initial, .doing, .benefits {
+.initial, .doing, .benefits, .projects, .activities {
     background-image: url('../imagem/eesquare.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -179,19 +178,14 @@ section.initial > div, section.benefits > div {
     z-index: 1; /* Coloca o overlay sobre a imagem de fundo */
 }
 
-#initialee {
-    background-image: url('../imagem/worker1024.jpg');
+#initialee, #doingee, #benefitsee, #projectsee {
+    background-image: url('../imagem/rede1024.jpg');
 }
-
 
 .doing {
     background-color: var(--color7);
     text-align: left;
     margin: 60px 0px;
-}
-
-#doingee {
-    background-image: url('../imagem/rede1024.jpg');
 }
 
 .final {
@@ -200,13 +194,13 @@ section.initial > div, section.benefits > div {
     background-repeat: no-repeat; /* Evita repetir a imagem */
     text-align: left;
     padding: 25px;
-    max-width: 556px;
+    min-width: 320px;
+    max-width: 50%;
     margin: auto;
     border-top: black 1px solid;
 }
 
 section.initial > div, section.benefits > div , section.doing > div, section.activities > div, section.projects > div {
-    max-width: 556px;
     background-color: var(--color7);
     position: relative;
     z-index: 2;
@@ -222,14 +216,9 @@ section.doing > div, section.activities > div, section.projects > div {
 .initial h1, .initial p, .benefits h1, .benefits p, .benefits ul, .benefits ol {
     padding: 10px;
     margin: 0px;
+    list-style-type: none;
     position: relative; /* Garante que o conteúdo da .doing tenha uma pilha de contexto */
     z-index: 2; /* Coloca o conteúdo acima do overlay */
-}
-
-.doing p, .benefits ul li p {
-    list-style-type: none;
-    margin: 0;
-    padding: 5px;
 }
 
 .final p {
@@ -237,7 +226,7 @@ section.doing > div, section.activities > div, section.projects > div {
 }
 
 .doing p, .benefits p {
-    padding: 2px 5px;
+    padding: 3px 5px;
 }
 
 .final h1 {
@@ -249,15 +238,19 @@ section img {
     width: 100%;
 }
 
+#graphic1, #graphic2 {
+    padding: 10px;
+}
+
 #teamti {
     min-width: 320px;
-    max-width: 530px;
-    margin: auto;
+    max-width: 50%;
     border-radius: 50%;
 }
 
 #teamee {
-    max-width: 530px;
+    min-width: 320px;
+    max-width: 50%;
     border-radius: 50%;
 }
 
@@ -294,10 +287,6 @@ main ul li {
 
 .projects .present, .projects .past {
     margin: 20px 0 0 0;
-    text-align: center;
-    background-color: rgba(82, 83, 78, 0.2);
-    padding: 1px 20px;
-    border-radius: 10px;
 }
 
 .projects ul li {
@@ -305,7 +294,7 @@ main ul li {
     padding: 8px;
     background-color: rgba(245, 245, 245, 0.85);
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .hidden {
@@ -443,6 +432,10 @@ footer p {
 .links i {
     margin-right: 5px;
     font-size: 1.8em;
+}
+
+.links p:nth-of-type(2) {
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
 }
 
 .links a {
