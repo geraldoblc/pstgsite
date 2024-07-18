@@ -19,4 +19,4 @@ Redes sociais: Facebook, Linkedin, Instagram, WhatsApp.
 Obs.:
 Buscar marca registrada "R", para colocar no footer;
 Colocar link em "TI-PSTG" e EE-PSTG" no texto;
-Fazer Gráfico em pizza dos estudos e colocar em projetos EE.
+quando for para as redes sociais da PSTG abrir nova aba.

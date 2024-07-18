@@ -62,6 +62,12 @@ header div {
     margin: 3px 10px 3px 0;
 }
 
+button {
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
 #language-select {
     cursor: pointer;
     border-radius: 10px;
@@ -182,18 +188,12 @@ section.initial > div, section.benefits > div {
     background-image: url('../imagem/rede1024.jpg');
 }
 
-.doing {
-    background-color: var(--color7);
-    text-align: left;
-    margin: 60px 0px;
-}
-
 .final {
     background-size: cover; /* Faz com que a imagem cubra toda a área */
     background-position: center; /* Centraliza a imagem no elemento */
     background-repeat: no-repeat; /* Evita repetir a imagem */
     text-align: left;
-    padding: 25px;
+    padding: 40px;
     min-width: 320px;
     max-width: 50%;
     margin: auto;
@@ -259,7 +259,7 @@ section img {
     flex-wrap: wrap;
     justify-content: center;
     border-top: black 1px solid;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .partners div img {
@@ -275,10 +275,6 @@ main ul li {
     padding: 0 5px;
     text-align: left;
     list-style-type: none;    
-}
-
-#benefits-ee-end {
-    margin-top: 15px;
 }
 
 #activities {
@@ -351,6 +347,8 @@ h2 {
     padding: 2px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    -webkit-text-stroke: 1px rgba(245, 245, 255, 0.8); /* Para navegadores WebKit como Chrome e Safari */
+    text-stroke: 1px rgba(245, 245, 245, 0.8); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
 }
 
 h3 {
@@ -444,9 +442,97 @@ footer p {
 
 .links a:hover {
     transition: transform 0.25s;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
 }
 
 #copyright {
     border-top: 1px solid black;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+    background-color: var(--color5);
+    
+}
+
+main.dark-mode {
+    background-color: var(--color5);
+    color: var(--color6);
+}
+
+main.dark-mode section {
+    background-color: var(--color5);
+    color: var(--color6);
+}
+
+main.dark-mode .welcome h1 {
+    background-color: var(--color5);
+    color: var(--color6);
+}
+
+main.dark-mode section.initial > div, main.dark-mode section.benefits > div, main.dark-mode section.doing > div, main.dark-mode section.activities > div, main.dark-mode section.projects > div {
+    background-color: var(--color5);
+    color: var(--color6);
+}
+
+main.dark-mode .final {
+    border-top: var(--color6) 1px solid;
+}
+
+main.dark-mode .partners {
+    border-top: var(--color6) 1px solid;
+}
+
+main.dark-mode .projects ul li {
+    background-color: rgba(031, 036, 033, 0.85);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.1);
+}
+
+main.dark-mode .more {
+    color: var(--color6);
+}
+
+main.dark-mode .more:hover {
+    color: var(--color7);
+}
+
+main.dark-mode h1 {
+    background-color: var(--color5);
+    color: var(--color6);
+}
+
+main.dark-mode h2 {
+    background-image: linear-gradient(to right, var(--color3), var(--color2));
+    color: var(--color5);
+    -webkit-text-stroke: 1px rgba(0, 0, 0); /* Para navegadores WebKit como Chrome e Safari */
+    text-stroke: 1px rgba(0, 0, 0); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
+}
+
+footer.dark-mode section {
+    background-color: var(--color5);
+    color: var(--color6);
+}
+
+footer.dark-mode h4 {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1); /* Para navegadores WebKit como Chrome e Safari */
+    text-stroke: 1px rgba(255, 255, 255, 0.1); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
+}
+
+footer.dark-mode {
+    background-color: var(--color5);
+    color: var(--color6);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+footer.dark-mode .logo img {
+    content: url('../imagem/logo256x102e.png');
+}
+
+footer.dark-mode a:hover {
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+footer.dark-mode #copyright {
+    border-top: 1px solid var(--color6);
 }
