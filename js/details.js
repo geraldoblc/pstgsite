@@ -5,7 +5,7 @@ function showMore(clickedElement) {
     // Alterna a visibilidade do elemento oculto
     if (hiddenElement.style.display === 'none' || hiddenElement.style.display === '') {
         hiddenElement.style.display = 'inline'; // Exibe o texto oculto
-        clickedElement.innerHTML = 'Detalhes: '; // Altera o texto do botão para "Mostrar menos"
+        clickedElement.innerHTML = '^ '; // Altera o texto do botão para "Mostrar menos"
     } else {
         hiddenElement.style.display = 'none'; // Esconde o texto oculto
         clickedElement.innerHTML = 'Detalhes...'; // Altera o texto do botão de volta para "Leia mais..."

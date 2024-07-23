@@ -277,6 +277,14 @@ main ul li {
     list-style-type: none;    
 }
 
+#project1, #project2, #project3 {
+    margin: 2px;
+    text-align: justify;
+    text-indent: 0px;
+    line-height: 0em;
+    padding: 10px 15px;
+}
+
 #activities {
     padding-top: 78px;
 }
