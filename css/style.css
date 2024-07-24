@@ -105,22 +105,12 @@ nav a:hover {
     border-bottom: 1px solid var(--color7);
 }
 
-.first-image {
-    width: 100%;
-    min-height: 90px;
-    margin-bottom: -5px;
-    padding-top: 79px;
-    
-}
-
 main {
     background-color: var(--color7);
     min-width: 320px;
     max-width: 769px;
     margin: auto;
-    margin-top: -110px;
-    border-top-left-radius: 120px;
-    border-top-right-radius: 120px;
+    margin-top: 64px;
     position: relative;
     z-index: 2;
     overflow: hidden;
