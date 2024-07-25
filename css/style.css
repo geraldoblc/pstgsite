@@ -252,9 +252,16 @@ section img {
     padding-top: 40px;
 }
 
+.partners div div {
+    display: flex;
+    flex-direction: line;
+    align-items: center; /* Centraliza verticalmente */
+}
+
 .partners div img {
-    max-width: 120px;
-    margin: 40px;
+    max-width: 180px;
+    margin: 20px 20px 0px 20px;
+    border-radius: 10px;
 }
 
 main ol li {
@@ -265,17 +272,6 @@ main ul li {
     padding: 0 5px;
     text-align: left;
     list-style-type: none;    
-}
-
-#project1ti, #project2ti, #project3ti, #project1ti, #project2ti, #project3ti {
-    margin: 2px;
-    text-align: justify;
-    text-indent: 0px;
-    line-height: 1em;
-}
-
-#activities {
-    padding-top: 78px;
 }
 
 .projects .present, .projects .past {
@@ -292,14 +288,26 @@ main ul li {
     flex-direction: column;
 }
 
+/*
+#project1ti, #project2ti, #project3ti, #project1ti, #project2ti, #project3ti {
+    margin: 2px;
+    text-align: justify;
+    text-indent: 0px;
+    line-height: 1em;
+}
+
+#activities {
+    padding-top: 78px;
+}
+
 .hidden-content {
-    display: none; /* Oculta por padrão */
+    display: none; 
 }
 
 .show-more {
-    cursor: pointer; /* Altera o cursor para indicar que é clicável */
-    color: var(--color5); /* Cor do link para mostrar que é interativo */
-    margin-left: auto; /* Empurra o ícone para a direita */
+    cursor: pointer; 
+    color: var(--color5); 
+    margin-left: auto; 
 }
 
 .show-more:hover {
@@ -308,8 +316,8 @@ main ul li {
 }
 
 .show-more i {
-    vertical-align: middle; /* Alinha verticalmente o ícone com o texto */
-    transition: transform 0.25s ease; /* Adiciona uma transição suave para a rotação */
+    vertical-align: middle; 
+    transition: transform 0.25s ease; 
 }
 
 .activities {
@@ -323,10 +331,9 @@ main ul li {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
+*/
 
 div img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     width: 100%;
 }
 
@@ -491,6 +498,7 @@ main.dark-mode .projects ul li {
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.1);
 }
 
+/*
 main.dark-mode .show-more {
     color: var(--color6);
 }
@@ -498,6 +506,7 @@ main.dark-mode .show-more {
 main.dark-mode .show-more:hover {
     color: white;
 }
+*/
 
 main.dark-mode h1 {
     background-color: var(--color5);
