@@ -267,12 +267,11 @@ main ul li {
     list-style-type: none;    
 }
 
-#project1, #project2, #project3 {
+#project1ti, #project2ti, #project3ti, #project1ti, #project2ti, #project3ti {
     margin: 2px;
     text-align: justify;
     text-indent: 0px;
-    line-height: 0em;
-    padding: 10px 15px;
+    line-height: 1em;
 }
 
 #activities {
@@ -284,27 +283,33 @@ main ul li {
 }
 
 .projects ul li {
-    margin: 5px;
+    margin: 4px;
     padding: 8px;
     background-color: rgba(245, 245, 245, 0.85);
     border-radius: 5px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
-.hidden {
-    display: none; 
+.hidden-content {
+    display: none; /* Oculta por padrão */
 }
 
-.more {
-    color: var(--color5);
-    font-style: italic;
-    cursor: pointer;
+.show-more {
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    color: var(--color5); /* Cor do link para mostrar que é interativo */
+    margin-left: auto; /* Empurra o ícone para a direita */
 }
 
-.more:hover {
-    transition: transform 0.25s;
+.show-more:hover {
+    transition-duration: 0.25s;
     color: black;
-    font-weight: bold;
+}
+
+.show-more i {
+    vertical-align: middle; /* Alinha verticalmente o ícone com o texto */
+    transition: transform 0.25s ease; /* Adiciona uma transição suave para a rotação */
 }
 
 .activities {
@@ -451,7 +456,6 @@ footer p {
 
 body.dark-mode {
     background-color: var(--color5);
-    
 }
 
 main.dark-mode {
@@ -487,12 +491,12 @@ main.dark-mode .projects ul li {
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.1);
 }
 
-main.dark-mode .more {
+main.dark-mode .show-more {
     color: var(--color6);
 }
 
-main.dark-mode .more:hover {
-    color: var(--color7);
+main.dark-mode .show-more:hover {
+    color: white;
 }
 
 main.dark-mode h1 {

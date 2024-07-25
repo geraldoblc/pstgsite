@@ -1,13 +1,21 @@
-function showMore(clickedElement) {
-    // Encontra o elemento irmão oculto do elemento clicado
-    var hiddenElement = clickedElement.nextElementSibling;
-    
-    // Alterna a visibilidade do elemento oculto
-    if (hiddenElement.style.display === 'none' || hiddenElement.style.display === '') {
-        hiddenElement.style.display = 'inline'; // Exibe o texto oculto
-        clickedElement.innerHTML = '^ '; // Altera o texto do botão para "Mostrar menos"
+function toggleContent(element) {
+    // Encontra o elemento span.show-more clicado
+    const showMoreSpan = element;
+
+    // Encontra o elemento span.hidden-content correspondente
+    const hiddenContent = showMoreSpan.nextElementSibling;
+
+    // Encontra o ícone dentro do span.show-more
+    const icon = showMoreSpan.querySelector('i');
+
+    // Verifica se a hidden-content está visível ou não
+    if (hiddenContent.classList.contains('hidden-content')) {
+        // Mostra o conteúdo
+        hiddenContent.classList.remove('hidden-content');
+        icon.style.transform = 'rotate(180deg)';
     } else {
-        hiddenElement.style.display = 'none'; // Esconde o texto oculto
-        clickedElement.innerHTML = 'Detalhes...'; // Altera o texto do botão de volta para "Leia mais..."
+        // Esconde o conteúdo
+        hiddenContent.classList.add('hidden-content');
+        icon.style.transform = 'rotate(0deg)';
     }
 }
