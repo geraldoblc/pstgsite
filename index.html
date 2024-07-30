@@ -176,7 +176,7 @@
 
         <section class="photos">
             <div>
-                <img src="imagem/ai736.jpg" alt="programmer" id="teamti">
+                <img src="imagem/crew1200.jpg" alt="programmer" id="teamti">
             </div>
         </section>
 
@@ -229,10 +229,10 @@
         <section class="footer-content">
             <div>
                 <div class="title">
-                    <h4>PSTG-Tech</h4>
+                    <h4>PSTG</h4>
                 </div>
                 <div class="info">
-                    <p>Razão Social: PSTG-Tech Ltda.</p>
+                    <p>Razão Social: PSTG Tech Ltda.</p>
                     <p>CNPJ: 22.738.582/0001-40</p>
                     <p>Endereço: Rua Gil Sobral Pinto, 93</p>
                     <p>Iucas - Teresópolis - RJ</p>
@@ -247,9 +247,17 @@
                     <h4 id="contacts">CONTATOS</h4>
                 </div>
                 <div class="links">
-                    <p><i class="fab fa-whatsapp fa-lg" style="color: #899C4E;"></i> +5521 98363-2737</p>
-                    <p><i class="far fa-envelope fa-lg" style="color: #899C4E;"></i>contato-pstg@pstg.com.br / rh-pstg@pstg.com.br</p>
-                    <p id="socialmedia">
+                    <p>
+                        <i class="fab fa-whatsapp fa-lg" style="color: #899C4E;" onclick="copyEmail('+5521 98363-2737')"></i>
+                        <span class="email" onclick="copyEmail('+5521 98363-2737')"> +5521 98363-2737</span></p>
+                    <p>
+                        <i class="far fa-envelope fa-lg" style="color: #899C4E;" onclick="copyEmail('contato@pstg.com.br')"></i>
+                        <span class="email" onclick="copyEmail('contato@pstg.com.br')">contato@pstg.com.br</span></p>
+                    <p>
+                        <i class="far fa-envelope fa-lg" style="color: #899C4E;" onclick="copyEmail('rh@pstg.com.br')"></i>
+                        <span class="email" onclick="copyEmail('rh@pstg.com.br')">rh@pstg.com.br</span>
+                    </p>
+                    <p>
                         <a href="https://www.linkedin.com/company/pstgtech/" id="linkedin" target="_blank"><i class="fab fa-linkedin-in fa-lg" style="color: #899C4E;"></i></a>
                         <a href="https://www.instagram.com/pstgtech/" id="instagram" target="_blank"><i class="fab fa-instagram fa-lg" style="color: #899C4E;"></i></a>
                         <a href="https://www.facebook.com/profile.php?id=61562308275020" id="facebook" target="_blank"><i class="fab fa-facebook fa-lg" style="color: #899C4E;"></i></a>
@@ -272,6 +280,9 @@
 
     <!-- Script for details / more -->
     <script src="js/details.js"></script>
+
+    <!-- Script for copy email -->
+    <script src="js/copy.js"></script>
     
 </body>
 </html>
