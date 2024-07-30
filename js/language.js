@@ -114,7 +114,7 @@ const languageTexts = {
         benefitsParagraph3aTI: 'We offer continuous support after deployment, ensuring that our clients always have the assistance needed to maximize the use of our solutions.',
         benefitsParagraph3bTI: 'Our team works closely with clients to understand their specific needs and offer customized solutions that meet their expectations.',
 
-        contactParagraphTI: 'We are available to discuss how our services can meet your specific needs and contribute to the success of your engineering projects. Let"s turn your ideas into reality!',
+        contactParagraphTI: "We are available to discuss how our services can meet your specific needs and contribute to the success of your engineering projects. Let's turn your ideas into reality!",
 
         welcomeTitleEE: 'Welcome to the PSTG EE division!',
         aboutUsParagraphEE: 'The PSTG Electrical Studies division (EE-PSTG) was created to meet the demands of the electricity sector in transmission, generation, distribution and energy storage. Made up of a team that brings together professionals with more than 20 years experience and young talents, this division combines tradition and innovation to offer services that meet the highest standards in terms of time, quality and cost, making it a competitive consulting firm in both the national and international markets.',
