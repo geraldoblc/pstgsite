@@ -392,7 +392,7 @@ footer p {
 }
 
 .footer-content div {
-    flex: 1 1 32%; /* Each div will take up approximately 45% of the width */
+    flex: 1 1 33%; /* Each div will take up approximately 45% of the width */
     margin: 0;
 }
 
@@ -407,7 +407,7 @@ footer p {
 }
 
 .links p {
-    margin: 5px;
+    margin: 5px 0;
 }
 
 .email {
@@ -415,7 +415,7 @@ footer p {
 }
 
 .links i {
-    margin-right: 5px;
+    margin: 2px;
     font-size: 1.8em;
 }
 
