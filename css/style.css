@@ -411,11 +411,11 @@ footer p {
 }
 
 .email {
+    text-decoration: none;
     cursor: pointer;
 }
 
 .links i {
-    margin: 2px;
     font-size: 1.8em;
 }
 
