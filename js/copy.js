@@ -16,4 +16,4 @@ function copyEmail(email) {
   
     // Notifica o usuário (opcional)
     alert('Copy: ' + email);
-  }  
+  }

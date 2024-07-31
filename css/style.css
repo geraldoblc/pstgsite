@@ -149,7 +149,7 @@ main a {
     background-color: var(--color7);
 }
 
-.initial, .doing, .benefits, .projects, .activities {
+.initial, .doing, .benefits, .projects {
     background-image: url('../imagem/eesquare.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -163,7 +163,7 @@ section.initial > div, section.benefits > div {
     margin-left: auto; /* Move a div para a direita */
 }
 
-.initial::before, .doing::before, .benefits::before, .activities::before, .projects::before {
+.initial::before, .doing::before, .benefits::before, .projects::before {
     content: ''; /* Cria um pseudo-elemento para o overlay */
     position: absolute; /* Posiciona o pseudo-elemento sobre a imagem */
     top: 0;
@@ -190,7 +190,7 @@ section.initial > div, section.benefits > div {
     border-top: black 1px solid;
 }
 
-section.initial > div, section.benefits > div , section.doing > div, section.activities > div, section.projects > div {
+section.initial > div, section.benefits > div , section.doing > div, section.projects > div {
     background-color: var(--color7);
     position: relative;
     z-index: 2;
@@ -199,7 +199,7 @@ section.initial > div, section.benefits > div , section.doing > div, section.act
     max-width: 50%;
 }
 
-section.doing > div, section.activities > div, section.projects > div {
+section.doing > div, section.projects > div {
     margin-right: auto; /* Move a div para a direita */
 }
 
@@ -274,7 +274,7 @@ main ul li {
     list-style-type: none;    
 }
 
-.projects .present, .projects .past {
+.projects .past {
     margin: 20px 0 0 0;
 }
 
@@ -289,17 +289,6 @@ main ul li {
 }
 
 /*
-#project1ti, #project2ti, #project3ti, #project1ti, #project2ti, #project3ti {
-    margin: 2px;
-    text-align: justify;
-    text-indent: 0px;
-    line-height: 1em;
-}
-
-#activities {
-    padding-top: 78px;
-}
-
 .hidden-content {
     display: none; 
 }
@@ -318,18 +307,6 @@ main ul li {
 .show-more i {
     vertical-align: middle; 
     transition: transform 0.25s ease; 
-}
-
-.activities {
-    display: flex;
-    flex-wrap: wrap; 
-}
-
-.course, .service {
-    margin: 15px;
-    background-color: rgba(200, 200, 200, 0.4);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 */
 
@@ -433,10 +410,6 @@ footer p {
     margin: 5px;
 }
 
-#socialmedia {
-    margin-top: 15px;
-}
-
 .email {
     cursor: pointer;
 }
@@ -446,12 +419,12 @@ footer p {
     font-size: 1.8em;
 }
 
-.links p:nth-of-type(3) {
-    margin-bottom: 12px; /* Ajuste o valor conforme necessário */
+#socialmedia {
+    padding-top: 5px;
 }
 
 .links a {
-    margin: 0 3px;
+    margin: 0 1px;
 }
 
 .links a:hover {
@@ -484,7 +457,7 @@ main.dark-mode .welcome h1 {
     color: var(--color6);
 }
 
-main.dark-mode section.initial > div, main.dark-mode section.benefits > div, main.dark-mode section.doing > div, main.dark-mode section.activities > div, main.dark-mode section.projects > div {
+main.dark-mode section.initial > div, main.dark-mode section.benefits > div, main.dark-mode section.doing > div, main.dark-mode section.projects > div {
     background-color: var(--color5);
     color: var(--color6);
 }
@@ -538,10 +511,6 @@ footer.dark-mode {
     background-color: var(--color5);
     color: var(--color6);
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-}
-
-footer.dark-mode .logo img {
-    content: url('../imagem/logo256x102e.png');
 }
 
 footer.dark-mode a:hover {

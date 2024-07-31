@@ -45,25 +45,11 @@ TV: acima de 1200px
     section.initial > div, section.benefits > div , section.doing > div, section.activities > div, section.projects > div {
         padding: 15px 30px;
     }
-    /*
-    #activities {
-        padding-top: 104px;
-    }
-    .course, .service {
-        flex: 1;
-    }
-    */
     .partners div img {
         max-width: 180px;
     }
     footer {
         font-size: 1.2em;
-    }
-    #socialmedia {
-        margin-top: 18px;
-    }
-    .links p:nth-of-type(3) {
-        margin-bottom: 15px; /* Ajuste o valor conforme necessário */
     }
     .links a {
         margin: 0 5px;
