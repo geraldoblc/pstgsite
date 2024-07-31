@@ -8,10 +8,10 @@
 
 /* Typical Device Breakpoints
 ---------------------------
-Celular: de 320px até 600px
-Tablet: 601px até 768px
-Desktop: 769px até 1200px
-TV: acima de 1200px
+Cell phone: 320px to 600px
+Tablet: 601px to 768px
+Desktop: 769px to 1200px
+TV: above 1200px
 */
 
 :root {
@@ -33,7 +33,7 @@ TV: acima de 1200px
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho do elemento */
+    box-sizing: border-box; /* Ensures that padding and border do not increase the size of the element */
 }
 
 body {
@@ -87,7 +87,7 @@ header img {
 }
 
 .division {
-    font-size: 1.25em; /* Aumentando o tamanho da fonte */
+    font-size: 1.25em;
     padding-right: 3px;
 }
 
@@ -153,25 +153,25 @@ main a {
     background-image: url('../imagem/eesquare.jpg');
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat; /* Evita repetir a imagem */
+    background-repeat: no-repeat;
     margin: 40px 0px;
     position: relative;
     background-position: bottom;
 }
 
 section.initial > div, section.benefits > div {
-    margin-left: auto; /* Move a div para a direita */
+    margin-left: auto; /* Move div to the right */
 }
 
 .initial::before, .doing::before, .benefits::before, .projects::before {
-    content: ''; /* Cria um pseudo-elemento para o overlay */
-    position: absolute; /* Posiciona o pseudo-elemento sobre a imagem */
+    content: ''; /* Create a pseudo-element for the overlay */
+    position: absolute; /* Positions the pseudo-element over the image */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Cor preta com transparência */
-    z-index: 1; /* Coloca o overlay sobre a imagem de fundo */
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1; /* Places the overlay over the background image */
 }
 
 #initialee, #doingee, #benefitsee, #projectsee {
@@ -179,12 +179,12 @@ section.initial > div, section.benefits > div {
 }
 
 .final {
-    background-size: cover; /* Faz com que a imagem cubra toda a área */
-    background-position: center; /* Centraliza a imagem no elemento */
-    background-repeat: no-repeat; /* Evita repetir a imagem */
+    background-size: cover; /* Makes the image cover the entire area */
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: left;
     padding: 40px;
-    min-width: 320px;
+    min-width: 350px;
     max-width: 50%;
     margin: auto;
     border-top: black 1px solid;
@@ -195,20 +195,20 @@ section.initial > div, section.benefits > div , section.doing > div, section.pro
     position: relative;
     z-index: 2;
     padding: 10px 20px;
-    min-width: 320px;
+    min-width: 350px;
     max-width: 50%;
 }
 
 section.doing > div, section.projects > div {
-    margin-right: auto; /* Move a div para a direita */
+    margin-right: auto; /* Move div to the left */
 }
 
 .initial h1, .initial p, .benefits h1, .benefits p, .benefits ul, .benefits ol {
     padding: 10px;
     margin: 0px;
     list-style-type: none;
-    position: relative; /* Garante que o conteúdo da .doing tenha uma pilha de contexto */
-    z-index: 2; /* Coloca o conteúdo acima do overlay */
+    position: relative; /* Ensures content has a context stack */
+    z-index: 2;
 }
 
 .final p {
@@ -233,13 +233,7 @@ section img {
 }
 
 #teamti {
-    min-width: 320px;
-    max-width: 50%;
-    border-radius: 50%;
-}
-
-#teamee {
-    min-width: 320px;
+    min-width: 350px;
     max-width: 50%;
     border-radius: 50%;
 }
@@ -255,11 +249,11 @@ section img {
 .partners div div {
     display: flex;
     flex-direction: line;
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center; /* Centers vertically */
 }
 
 .partners div img {
-    max-width: 120px;
+    max-width: 135px;
     margin: 20px 20px 0px 20px;
     border-radius: 10px;
 }
@@ -334,8 +328,8 @@ h2 {
     padding: 2px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    -webkit-text-stroke: 1px rgba(245, 245, 255, 0.8); /* Para navegadores WebKit como Chrome e Safari */
-    text-stroke: 1px rgba(245, 245, 245, 0.8); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
+    -webkit-text-stroke: 1px rgba(245, 245, 255, 0.8); /* For WebKit browsers like Chrome and Safari */
+    text-stroke: 1px rgba(245, 245, 245, 0.8); /* For other browsers that support the 'text-stroke' property */
 }
 
 h3 {
@@ -366,8 +360,8 @@ h4 {
     letter-spacing: 1px;
     font-size: 1.05em;
     padding-bottom: 10px;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para navegadores WebKit como Chrome e Safari */
-    text-stroke: 1px rgba(0, 0, 0, 0.2); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+    text-stroke: 1px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -392,7 +386,7 @@ footer p {
 }
 
 .footer-content div {
-    flex: 1 1 33%; /* Each div will take up approximately 45% of the width */
+    flex: 1 1 33%; /* Each div will take up approximately 33% of the width */
     margin: 0;
 }
 
@@ -411,7 +405,6 @@ footer p {
 }
 
 .email {
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -489,8 +482,8 @@ main.dark-mode h1 {
 main.dark-mode h2 {
     background-image: linear-gradient(to right, var(--color3), var(--color2));
     color: var(--color5);
-    -webkit-text-stroke: 1px rgba(0, 0, 0); /* Para navegadores WebKit como Chrome e Safari */
-    text-stroke: 1px rgba(0, 0, 0); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
+    -webkit-text-stroke: 1px rgba(0, 0, 0);
+    text-stroke: 1px rgba(0, 0, 0);
 }
 
 footer.dark-mode section {
@@ -499,8 +492,8 @@ footer.dark-mode section {
 }
 
 footer.dark-mode h4 {
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1); /* Para navegadores WebKit como Chrome e Safari */
-    text-stroke: 1px rgba(255, 255, 255, 0.1); /* Para outros navegadores que suportam a propriedade 'text-stroke' */
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+    text-stroke: 1px rgba(255, 255, 255, 0.1);
 }
 
 footer.dark-mode {

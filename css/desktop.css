@@ -2,10 +2,10 @@
 
 /* Typical Device Breakpoints
 ---------------------------
-Celular: de 320px até 600px
-Tablet: 601px até 768px
-Desktop: 769px até 1200px
-TV: acima de 1200px
+Cell phone: 320px to 600px
+Tablet: 601px to 768px
+Desktop: 769px to 1200px
+TV: above 1200px
 */
 
 @media screen and (min-width: 769px) {
