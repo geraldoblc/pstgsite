@@ -107,7 +107,7 @@ nav a:hover {
 
 main {
     background-color: var(--color7);
-    min-width: 320px;
+    min-width: 350px;
     max-width: 769px;
     margin: auto;
     margin-top: 64px;
@@ -421,10 +421,6 @@ footer p {
 
 #socialmedia {
     padding-top: 5px;
-}
-
-.links a {
-    margin: 0 1px;
 }
 
 .links a:hover {
